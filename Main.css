@@ -1,0 +1,10 @@
+/* ===========FONT(GOOGLE FONTS)========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* ============CSS============== */
+:root {
+    --header-height: 3.5rem;
+    --nav-width: 219px;
+}
+
+/* Colors */
