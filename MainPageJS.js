@@ -1,3 +1,4 @@
 function SearchBar(){
-    var input = document.getElementById('searchbar')
+    var searchbarinput = document.getElementById('searchbar');
+    
 }
