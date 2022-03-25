@@ -10,10 +10,12 @@ function SearchBar(){
         a = li[i].getElementsByTagName("a")[0];
         Inputvalue = a.textContent || a.innerText;
         if (Inputvalue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+            li[i].style.display="";
+            li[i].style.visibility = "visible";
         } 
         else {
-            li[i].style.display = "none";
+            li[i].style.display="none";
+            li[i].style.visibility = "hidden";
         }
 
     }
