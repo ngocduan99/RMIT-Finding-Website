@@ -85,7 +85,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: var(--header-height);
+
 }
 
 
@@ -127,7 +127,7 @@ img{
     text-decoration: none;
     font-size: 18px;
     color: black;
-    display: none;
+    display: block;
 
 }
 
