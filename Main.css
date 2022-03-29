@@ -266,9 +266,14 @@ img{
 
 .nav_dropdown-icon{
     margin-left: auto;
+    transition: .4s;
 }
 
 /* Show collapse effect */
 .nav_dropdown:hover{
     max-height: 100rem;
+}
+
+.nav_dropdown:hover .nav_dropdown-icon{
+    transform: rotate(180deg);
 }
