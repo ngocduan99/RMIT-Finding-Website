@@ -1,3 +1,41 @@
+/*=============NAV MENU SHOW===============*/
+const showMenu = (headerToggle,navbarID) =>{
+    const toggleBtn = document.getElementById(headerToggle),
+    nav = document.getElementById(navbarID)
+
+    if(headerToggle && navbarID){
+        toggleBtn.addEventListener('click', () => {
+            //add show_menu class to nav_menu class
+            nav.classList.toggle('show_menu')
+
+            //Change icon
+            toggleBtn.classList.toggle('bx-x')
+        })
+    }
+}
+
+showMenu('toggle','navbar')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================SEARCHBAR==================*/
+
+
+
+/* Searchbar filter function */
 function SearchBar(){
     var searchbarinput = document.getElementById("searchbar");
     var filter = searchbarinput.value.toUpperCase();
