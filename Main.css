@@ -84,7 +84,7 @@ img{
 .header_container{
     display: flex;
     align-items: center;
-    height: var(--header-height);
+    /* height: var(--header-height); */
     justify-content: space-between;
     
 
@@ -136,19 +136,22 @@ img{
 #myUL {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    top: 50px;
+    width: 20%;
     visibility: hidden;
+    position: absolute;
 }
 
 #myUL li a {
+    
     border: 1px solid #ddd;
-    margin-top: -1px;
+    margin-top: 1px;
     background-color: blue;
     padding: 12px;
     text-decoration: none;
     font-size: 18px;
-    color: black;
-    display: none;
+    color: white;
+    display: block;
 
 }
 
