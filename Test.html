@@ -4,19 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===========BOX ICON============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>Document</title>
+
+
+    <!-- ===========CSS============ -->
+    <link rel = "stylesheet" href="Test.css">
+    <title> Map Display </title>
+
 </head>
+
+
 <body>
-    <input type = "text" placeholder="search" id="searchbar" title="Type in a name" onkeyup="SearchBar()">
+    <!-- =========HEADER========== -->
+    <header class="header">
+        <div class ="header_container">
+            <img src = "240872678_380247353621773_7476983692857334798_n.jpg" alt = ""  class = "header_img">
+             
+            <a href = "#" class = "header_logo">RMIT FINDING</a>
+
+            <div class = "header_searchbar">
+                
+                <button><a href="Test.html" target="_blank"><i class='bx bx-search-alt header_icon'></i></a></button>
+                <input type = "text" placeholder="search" id="searchbar" title="Type in a name" onkeyup="SearchBar()">
+            <ul id = "myUL">
+                <li><a href="Test.html" target="_blank">B2.03.04</a></li>
+                <li><a href="Test.html" target="_blank">B1.05.10</a></li>
+                <li><a href="Test.html" target="_blank">B2.02.40</a></li>
+                <li><a href="Test.html" target="_blank">B2.05.12</a></li>
+                <li><a href="Test.html" target="_blank">B1.03.05</a></li>
+            </ul>
+            </div>
+
+            <div class="header_toggle">
+                <i class='bx bx-menu' id = "toggle"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- ===============NAVIGATION================= -->
+    <nav></nav>
 
 
-                <ul id = "myUL">
-                    <li><a href="#">B2.03.04</a></li>
-                    <li><a href="#">B1.05.10</a></li>
-                    <li><a href="#">B2.02.40</a></li>
-                    <li><a href="#">B2.05.12</a></li>
-                    <li><a href="#">B1.03.05</a></li>
-                </ul>
+    <!-- ==================MAIN BODY============== -->
+    <main>
+
+        <section>
+        <div class = "title">
+            <h2> Map </h2>
+        </div>
+        <div class = "box_container">
+            <div class = "box one">
+                <img src = "dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" alt = "" width="600" height="600">
+            </div>
+            <div class = "box two">
+                <img src = "680eed36-67af-42f2-8f29-72cac6dcb18e.jpg" alt = "" width="300" height="300">
+            </div>
+            <div class = "box three">
+                <h1>Đây là hình sẽ gầy</h1>
+            </div>
+        </div>
+        </section>
+
+
+    </main>
+    
+
+    <!-- =================FOOTER================ -->
+    <footer></footer>
+
+
+
+
+
 </body>
 <script src="MainPageJS.js"></script>
 </html>
