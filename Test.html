@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ===========BOX ICON============ -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Document</title>
 
 
@@ -50,25 +51,41 @@
 
     <!-- ==================MAIN BODY============== -->
     <main>
-
-        <section>
         <div class = "title">
-            <h2> Mapping </h2>
+            <h2> MaP </h2>
         </div>
-        <div class = "box_container">
-            <div class = "box one">
-                <img src = "dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" alt = "" width="600" height="600">
+        <div id="content-wrapper">
+            <div class="column one">
+                <img id=featured src="dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg">
+    
+                <div id="slide-wrapper" >
+                    <img id="slideLeft" class="arrow" src="arrow-left.png">
+    
+                    <div id="slider">
+                        <img class="thumbnail active" src="dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg">
+                        <img class="thumbnail" src="680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                        <img class="thumbnail" src="680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+    
+                        <img class="thumbnail" src="680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                        <img class="thumbnail" src="680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                        <img class="thumbnail" src="680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                        <img class="thumbnail" src="680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                    </div>
+    
+                    <img id="slideRight" class="arrow" src="arrow-right.png">
+                </div>
             </div>
-            <div class = "box two">
-                <img src = "680eed36-67af-42f2-8f29-72cac6dcb18e.jpg" alt = "" width="300" height="300">
+    
+            <div class="column two">
+                <h1>RMIT Connect</h1>
+                <hr>
+                <p> Đây là description </p>
             </div>
-            <div class = "box three">
-                <h1>Đây là hình sẽ gầy</h1>
+    
+            <div class = "column three">
+                <p> Đây là hình sơ đồ </p>
             </div>
         </div>
-        </section>
-
-
     </main>
     
 
@@ -80,5 +97,5 @@
 
 
 </body>
-<script src="MainPageJS.js"></script>
+<script src="Test.js"></script>
 </html>
