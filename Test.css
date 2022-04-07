@@ -164,7 +164,7 @@ img{
 /* ===================MAIN (TEST)======================= */
 main{
 	padding-top: 50px;
-    padding-left: 150px;
+
 }
 
 .title{
@@ -332,7 +332,13 @@ main{
 
     /*Main */
     
-
+    #content-wrapper{
+        max-width: 300px;
+        grid-auto-rows: minmax(100px,auto);
+        grid-template-areas: 
+        "one three"
+        "one two";
+    }
 
 
 
