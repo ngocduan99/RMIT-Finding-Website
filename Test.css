@@ -181,8 +181,9 @@ main{
 	grid-template-columns: 0fr 0fr;
     grid-template-rows: 7fr 4fr;
     grid-template-areas: 
-    "one three"
-    "one two";
+    "one three three"
+    "one two two"
+    "four four four";
     grid-gap: 30px;
     margin-top: 20px;
 }
