@@ -86,7 +86,7 @@ img{
     align-items: center;
     height: var(--header-height);
     justify-content: space-between;
-    
+
 
 }
 
@@ -143,7 +143,7 @@ img{
 }
 
 #myUL li a {
-    
+
     border: 1px solid #ddd;
     margin-top: 1px;
     background-color: blue;
@@ -180,7 +180,7 @@ main{
 	display: grid;
 	grid-template-columns: 0fr 0fr;
     grid-template-rows: 7fr 4fr;
-    grid-template-areas: 
+    grid-template-areas:
     "one three three"
     "one two two"
     "four four four";
@@ -245,7 +245,7 @@ main{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 
 }
- 
+
 #slider::-webkit-scrollbar-thumb {
   background-color: #dede2e;
   outline: 1px solid slategrey;
@@ -295,7 +295,7 @@ main{
     }
 
     #content-wrapper{
-        grid-template-areas: 
+        grid-template-areas:
         'one'
         'two'
         'three';
@@ -332,11 +332,11 @@ main{
 
 
     /*Main */
-    
+
     #content-wrapper{
         max-width: 300px;
         grid-auto-rows: minmax(100px,auto);
-        grid-template-areas: 
+        grid-template-areas:
         "one three"
         "one two";
     }
