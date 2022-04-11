@@ -29,7 +29,7 @@ linkColor.forEach(l => l.addEventListener('click',colorLink))
 
 /*================SEARCHBAR==================*/
 function alertclick(){
-    alert("error"); 
+    alert("error");
 }
 /* Searchbar filter function */
 function SearchBar(){
@@ -55,4 +55,3 @@ function SearchBar(){
         };
     };
 };
-
