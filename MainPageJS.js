@@ -27,17 +27,10 @@ function colorLink(){
 
 linkColor.forEach(l => l.addEventListener('click',colorLink))
 
-
-
-
-
-
-
-
 /*================SEARCHBAR==================*/
-
-
-
+function alertclick(){
+    alert("error"); 
+}
 /* Searchbar filter function */
 function SearchBar(){
     var searchbarinput = document.getElementById("searchbar");
@@ -50,14 +43,16 @@ function SearchBar(){
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         Inputvalue = a.textContent || a.innerText;
-        if (Inputvalue.toUpperCase().indexOf(filter) > -1) {
+        if (Inputvalue.toUpperCase().indexOf(filter)>-1) {
             li[i].style.display="";
             li[i].style.visibility = "visible";
-        } 
+            document.getElementById("btsearch").onclick= function(){SearchBar()};
+        }
         else {
             li[i].style.display="none";
             li[i].style.visibility = "hidden";
-        }
-
-    }
+            document.getElementById("btsearch").onclick= function(){alertclick()};
+        };
+    };
 };
+
