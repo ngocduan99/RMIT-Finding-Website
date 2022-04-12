@@ -30,6 +30,10 @@ linkColor.forEach(l => l.addEventListener('click',colorLink))
 /*================SEARCHBAR==================*/
 function alertclick(){
     alert("error");
+    location.reload();
+}
+function alertclick1(){
+    alert("Choose your room");
 }
 /* Searchbar filter function */
 function SearchBar(){
@@ -46,7 +50,7 @@ function SearchBar(){
         if (Inputvalue.toUpperCase().indexOf(filter)>-1) {
             li[i].style.display="";
             li[i].style.visibility = "visible";
-            document.getElementById("btsearch").onclick= function(){SearchBar()};
+            document.getElementById("btsearch").onclick= function(){alertclick1};
         }
         else {
             li[i].style.display="none";
