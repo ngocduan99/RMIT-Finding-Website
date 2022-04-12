@@ -64,6 +64,9 @@ function SearchBar(){
 
 
 
+
+/* ==================MAIN===============*/
+
 /*Change image Slider*/
 let thumbnails = document.getElementsByClassName('thumbnail')
 
