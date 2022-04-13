@@ -181,11 +181,11 @@ main{
 	grid-template-columns: 0fr 0fr;
     grid-template-rows: 7fr 4fr;
     grid-template-areas:
-    "one three three"
-    "one two two"
-    "four four four";
-    grid-gap: 30px;
+    "one three four"
+    "one two four";
+    grid-gap: 80px;
     margin-top: 20px;
+    justify-content: stretch;
 }
 
 .column{
@@ -283,24 +283,30 @@ main{
     grid-area: three;
 }
 
+.four {
+    grid-area: four;
+}
 
 
 
 
 /* ============MEDIA QUERY============ */
 /* =====Small device====== */
-@media screen and (min-width: 320px){
+@media screen and (max-width: 320px){
     .header_searchbar{
         width: 70%;
     }
 
     #content-wrapper{
-        grid-template-areas:
-        'one'
-        'two'
-        'three';
+        max-width: 50px;
+        grid-auto-rows: minmax(50px,auto) ;
+        grid-template-areas: 
+        "one four"
+        "two three";
     }
 }
+
+
 
 @media screen and (min-width: 768px){
     body{
@@ -334,14 +340,16 @@ main{
     /*Main */
 
     #content-wrapper{
-        max-width: 300px;
+        max-width: 100px;
         grid-auto-rows: minmax(100px,auto);
         grid-template-areas:
-        "one three"
-        "one two";
+        "one three four"
+        "one two four";
     }
 
-
+    .column{
+        max-width: 400px;
+    }
 
 
 
