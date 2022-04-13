@@ -50,12 +50,30 @@ function SearchBar(){
         if (Inputvalue.toUpperCase().indexOf(filter)>-1) {
             li[i].style.display="";
             li[i].style.visibility = "visible";
-            document.getElementById("btsearch").onclick= function(){alertclick1};
         }
         else {
             li[i].style.display="none";
             li[i].style.visibility = "hidden";
-            document.getElementById("btsearch").onclick= function(){alertclick()};
         };
     };
 };
+function alertclick(){
+    var i,a,Inputvalue;
+    var searchbarinput = document.getElementById("searchbar");
+    var filter = searchbarinput.value.toUpperCase();
+    var ul= document.getElementById("myUL");
+    var li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        Inputvalue = a.textContent || a.innerText;
+        if (Inputvalue.toUpperCase().indexOf(filter)>-1) {
+            document.getElementById("btsearch").onclick= alert("Select your room");
+            break;
+        }
+        else{
+            alert("error");
+            location.reload();
+            break;
+        }
+    }
+}
