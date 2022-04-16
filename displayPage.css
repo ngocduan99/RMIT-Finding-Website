@@ -163,7 +163,7 @@ img{
 
 /* ===================MAIN (TEST)======================= */
 main{
-	padding-top: 50px;
+	padding-top: 100px;
 
 }
 
@@ -269,11 +269,16 @@ main{
         "one four"
         "two three";
     }
+
+    main{
+        padding-top: 50px;
+    }
 }
 
 
 
 @media screen and (min-width: 768px){
+
     body{
         padding: 0 3rem 0 6rem;
     }
@@ -303,6 +308,8 @@ main{
 
 
     /*Main */
+
+
 
     #content-wrapper{
         max-width: 100px;
