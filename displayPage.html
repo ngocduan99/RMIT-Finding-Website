@@ -24,7 +24,7 @@
         <div class ="header_container">
             <img src = "240872678_380247353621773_7476983692857334798_n.jpg" alt = ""  class = "header_img">
 
-            <a href = "#" class = "header_logo">RMIT FINDING</a>
+            <a href = "Mainpage.html" class = "header_logo">RMIT FINDING</a>
 
             <div class = "header_searchbar">
 
@@ -46,22 +46,99 @@
 
     </header>
 
-    <!-- ===============NAVIGATION================= -->
-    <nav></nav>
+    <!-- ============NAVIGATION========== -->
+    <div class="nav" id = "navbar">
+        <nav class = "nav_container">
+            <div>
+                <a href="#" class="nav_link nav_logo">
+                    <i class='bx bx-disc nav_icon' ></i>
+                    <span class="nav_logoname"> RMIT FINDING </span>
+                </a>
+
+                <div class="nav_list">
+                    <div class="nav_items">
+                        <h3 class="nav_title"> Profile </h3>
+                        <a href="#" class="nav_link">
+                            <i class='bx bxs-home nav_icon'></i>
+                            <span class="nav_subname"> Homepage </span>
+                        </a>
+
+                        <div class="nav_dropdown">
+                            <a href="#" class="nav_link active">
+                                <i class='bx bxs-user-circle nav_icon' ></i>
+                                <span class="nav_subname"> Users </span>
+                                <i class='bx bxs-chevron-down nav_icon nav_dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav_dropdown-collapse">
+                                <div class="nav_dropdown-contents">
+                                    <a href="#" class="nav_dropdown-items">Password</a>
+                                    <a href="#" class="nav_dropdown-items">Email</a>
+                                    <a href="#" class="nav_dropdown-items">Accounts</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="nav_link">
+                            <i class='bx bxs-chat nav_icon' ></i>
+                            <span class="nav_subname"> Messages </span>
+                        </a>
+                    </div>
+
+                    <div class="nav_items">
+                        <h3 class="nav_title"> Menu </h3>
+
+                        <div class="nav_dropdown">
+                            <a href="#" class="nav_link active">
+                                <i class='bx bxs-bell nav_icon' ></i>
+                                <span class="nav_subname"> Notifications </span>
+                                <i class='bx bxs-chevron-down nav_icon nav_dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav_dropdown-collapse">
+                                <div class="nav_dropdown-contents">
+                                    <a href="#" class="nav_dropdown-items">Maintanences</a>
+                                    <a href="#" class="nav_dropdown-items">News</a>
+                                    <a href="#" class="nav_dropdown-items">Errors</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <a href="#" class="nav_link">
+                            <i class='bx bxs-compass nav_icon' ></i>
+                            <span class="nav_subname"> Navigations </span>
+                        </a>
+
+                        <a href="#" class="nav_link">
+                            <i class='bx bxs-bookmark nav_icon' ></i>
+                            <span class="nav_subname"> Saves </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav_link nav_logout">
+                <i class='bx bx-log-out nav_icon' ></i>
+                <span class="nav_subname"> Log out </span>
+            </a>
+        </nav>
+    </div>
 
 
     <!-- ==================MAIN BODY============== -->
     <main>
 
         <div class = "des-heading">
-            <h1> RMIT </h1>
+            <h1> Room description </h1>
         </div>
     
         <!-- display image & room data layout-->
         <br>
         <div class = "container-fluid">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-5">
                 <img id=featured src="dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg">
                 <div id="slide-wrapper" >
                     <img id="slideLeft" class="arrow" src="arrow-left.png">
@@ -80,24 +157,25 @@
                 </div>
 
             </div>
-            <div class="col-sm-6">
+            <div class ="col-sm-1"></div>
+            <div class="col-sm-5">
                 <div class="description-data">
                     <div class = "description-title">
-                    <h1> Here some details </h1>
-                    </div>
+                    <h1> RMIT CONNECT </h1>
+                    </div> 
                     <br>
                     <div class ="des-content">
                         <div class="dcolumn">
-                            <p> Đây là dòng 1</p>
+                            <p> Main description</p>
                         </div>
                         <div class="dcolumn">
-                            <p> Đây là dòng 1</p>
+                            <p> Time opening </p>
                         </div>
                         <div class="dcolumn">
-                            <p> Đây là dòng 1</p>
+                            <p> Optional usage </p>
                         </div>
                         <div class="dcolumn">
-                            <p> Đây là dòng 2</p>
+                            <p> Room rules </p>
                         </div>
                     </div>
                 </div>
