@@ -5,6 +5,12 @@
 :root {
     --header-height: 3.5rem;
     --nav-width: 219px;
+    --title-height: 46px;
+    --des-container: 518px;
+    --des-contentbox: calc(var(--des-container) - var(--title-height));
+    --des-column: calc(var(--des-contentbox)/4);
+
+
 
 /* Colors */
     --first-color: #6923D0;
@@ -167,12 +173,15 @@ main{
 
 }
 
-.title{
-    display: contents;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--normal-font-size);
+/* Grid system Css */
 
+
+
+
+
+/* Query image selector (Left)  */ 
+.des-heading{
+    text-align: center;
 }
 
 #featured{
@@ -251,8 +260,23 @@ main{
 
 
 
+/* Description columns (Right) */
 
+.description-data{
+    height: var(--des-container);
+}
 
+.description-title{
+    height: var(--title-height);
+}
+
+.des-content{
+    height: var(--des-contentbox);
+}
+
+.dcolumn{
+    height: var(--des-column);
+}
 
 
 /* ============MEDIA QUERY============ */
@@ -262,21 +286,14 @@ main{
         width: 70%;
     }
 
-    #content-wrapper{
-        max-width: 50px;
-        grid-auto-rows: minmax(50px,auto) ;
-        grid-template-areas: 
-        "one four"
-        "two three";
-    }
-
-    main{
-        padding-top: 50px;
-    }
+   
 }
 
 
 
+@media screen and (max-width: 768px){
+
+}
 @media screen and (min-width: 768px){
 
     body{
@@ -308,20 +325,6 @@ main{
 
 
     /*Main */
-
-
-
-    #content-wrapper{
-        max-width: 100px;
-        grid-template-columns: repeat(auto-fit, 1fr);
-        grid-template-areas:
-        "one three four"
-        "one two four";
-    }
-
-    .column{
-        max-width: 400px;
-    }
 
     .floor-plan-image{
         align-items: center;
