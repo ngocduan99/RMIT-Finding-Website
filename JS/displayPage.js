@@ -180,6 +180,7 @@ try{
                 document.getElementById("test-image").setAttribute("src", url);
         }
     )
+
     }catch(e){
-        console.log(e);
+        console.log(err);
     }
