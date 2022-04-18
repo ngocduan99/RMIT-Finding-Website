@@ -122,13 +122,13 @@ import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebas
 
 // firebaseConfig
 const firebaseConfig = ({
-    apiKey: "AIzaSyDvYxzHNNlNv5wsAuBaAY7_nnCMBlxTZ6Q",
-    authDomain: "testing2-4bb02.firebaseapp.com",
-    projectId: "testing2-4bb02",
-    storageBucket: "gs://testing2-4bb02.appspot.com",
-    messagingSenderId: "905228859838",
-    appId: "1:905228859838:web:5e9a5d3e15d27b13e461ef",
-    measurementId: "G-GTDY3N9CK9"
+    apiKey: "AIzaSyAYuccRNRZU-JUI5HqF-Pr4_q14d_gn5mE",
+    authDomain: "rmit-finding.firebaseapp.com",
+    projectId: "rmit-finding",
+    storageBucket: "rmit-finding.appspot.com",
+    messagingSenderId: "588772101914",
+    appId: "1:588772101914:web:57858d4a30dc76d4fca6a3"
+
   });
 
 // Initialize Firebase and Firebase-services
@@ -158,6 +158,7 @@ try{
     console.log("Document data:", docSnap.data());
     document.getElementById("main-room-description").innerHTML = docSnap.data().mainDescription;
     document.getElementById("time-open-description").innerHTML = docSnap.data().timeOpen;
+    document.getElementById("optional-usage").innerHTML = docSnap.data().optionalUsage;
     document.getElementById("room-rule-description").innerHTML = docSnap.data().rule;
 
     } else {
@@ -171,18 +172,18 @@ catch(err) {
 }
 
 // // key & value image
-// const str = getStorage(app);
-// var imgRef = buildingNum +'/' + roomNum +'.png';
-// const storageRef = ref(str, imgRef);
+const str = getStorage(app);
+var imgRef = buildingNum +'/' + roomNum +'.png';
+const storageRef = ref(str, imgRef);
 
-// // Implement picture into html file
-// try{
-//     getDownloadURL(storageRef).then(
-//             function(url){
-//                 console.log(url);
-//                 document.getElementById("demo3").setAttribute("src", url);
-//         }
-//     )
-//     }catch(e){
-//         console.log(e);
-//     }
+// Implement picture into html file
+try{
+    getDownloadURL(storageRef).then(
+            function(url){
+                console.log(url);
+                document.getElementById("test-image").setAttribute("src", url);
+        }
+    )
+    }catch(e){
+        console.log(e);
+    }
