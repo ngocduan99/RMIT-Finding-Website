@@ -28,52 +28,56 @@ function colorLink(){
 linkColor.forEach(l => l.addEventListener('click',colorLink))
 
 /*================SEARCHBAR==================*/
-function alertclick(){
-    alert("error");
-    location.reload();
-}
-function alertclick1(){
-    alert("Choose your room");
-}
+// function alertclick(){
+//     alert("error");
+//     location.reload();
+// }
+// function alertclick1(){
+//     alert("Choose your room");
+// }
+
+
 /* Searchbar filter function */
-function SearchBar(){
-    var searchbarinput = document.getElementById("searchbar");
-    var filter = searchbarinput.value.toUpperCase();
-    var ul= document.getElementById("myUL");
-    var li = ul.getElementsByTagName("li");
-    var i;
-    var a;
-    var Inputvalue;
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        Inputvalue = a.textContent || a.innerText;
-        if (Inputvalue.toUpperCase().indexOf(filter)>-1) {
-            li[i].style.display="";
-            li[i].style.visibility = "visible";
-        }
-        else {
-            li[i].style.display="none";
-            li[i].style.visibility = "hidden";
-        };
-    };
-};
-function alertclick(){
-    var i,a,Inputvalue;
-    var searchbarinput = document.getElementById("searchbar");
-    var filter = searchbarinput.value.toUpperCase();
-    var ul= document.getElementById("myUL");
-    var li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        Inputvalue = a.textContent || a.innerText;
-        if (Inputvalue.toUpperCase().indexOf(filter)>-1) {
-            document.getElementById("btsearch").onclick= alert("Select your room");
-            break;
-        }
-        else{
-            alert("error");
-            location.reload();
-            break;
-        }
-    }
+// function SearchBar(){
+//     var searchbarinput = document.getElementById("searchbar");
+//     var filter = searchbarinput.value.toUpperCase();
+//     var ul= document.getElementById("myUL");
+//     var li = ul.getElementsByTagName("li");
+//     var i;
+//     var a;
+//     var Inputvalue;
+//     for (i = 0; i < li.length; i++) {
+//         a = li[i].getElementsByTagName("a")[0];
+//         Inputvalue = a.textContent || a.innerText;
+//         if (Inputvalue.toUpperCase().indexOf(filter)>-1) {
+//             li[i].style.display="";
+//             li[i].style.visibility = "visible";
+//         }
+//         else {
+//             li[i].style.display="none";
+//             li[i].style.visibility = "hidden";
+//         };
+//     };
+// };
+
+// Alert function
+// function alertclick(){
+//     var i,a,Inputvalue;
+//     var searchbarinput = document.getElementById("searchbar");
+//     var filter = searchbarinput.value.toUpperCase();
+//     var ul= document.getElementById("myUL");
+//     var li = ul.getElementsByTagName("li");
+//     for (i = 0; i < li.length; i++) {
+//         a = li[i].getElementsByTagName("a")[0];
+//         Inputvalue = a.textContent || a.innerText;
+//         if (Inputvalue.toUpperCase().indexOf(filter)>-1) {
+//             document.getElementById("btsearch").onclick= alert("Select your room");
+//             break;
+//         }
+//         else{
+//             alert("error");
+//             location.reload();
+//             break;
+//         }
+//     }
 }

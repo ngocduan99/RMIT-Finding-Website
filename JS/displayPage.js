@@ -1,3 +1,11 @@
+
+
+
+    
+
+
+
+
 /*=============NAV MENU SHOW===============*/
 const showMenu = (headerToggle,navbarID) =>{
     const toggleBtn = document.getElementById(headerToggle),
@@ -95,6 +103,12 @@ buttonRight.addEventListener('click', function(){
 
 
 /* Tuan part */
+// getDATA();
+document.getElementById("search-button").onclick = function(){
+    var input = document.getElementById("search-input").value;
+    console.log(input);
+}
+
 
 // //JSON: Javascript Object Notation
 // console.log("this is javascript");
@@ -125,6 +139,7 @@ const firebaseConfig = ({
 
   });
 
+  
 // Initialize Firebase and Firebase-services
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -134,9 +149,6 @@ const db = getFirestore(app);
 // var input = "B2.02.02";
 // var input = "B1.01.01";
 
-var input = document.getElementById("searchbar").value;  
-console.log(input);
-// var input = "B1.01.01";
 
 const inputArr = [];
 for (let index = 0; index < 3; index++) {
@@ -170,6 +182,7 @@ try{
 catch(err) {
     console.log(err);
 }
+
 
 // // key & value image
 const str = getStorage(app);
