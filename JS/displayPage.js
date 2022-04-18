@@ -98,3 +98,89 @@ buttonLeft.addEventListener('click', function(){
 buttonRight.addEventListener('click', function(){
     document.getElementById('slider').scrollLeft += 180
 })
+
+
+/* Tuan part */
+
+// //JSON: Javascript Object Notation
+// console.log("this is javascript");
+
+// //fetch () return a PROMISE in RESOLVES status with the value RESPONSE for that request
+// fetch ("data.json")
+//         .then(response => response.json()) //must have to read the json file
+//         .then(data =>{
+//             console.log(data);
+//             document.getElementById("demo").innerHTML = data.name;
+
+//         });
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+import { collection, doc, getDoc, setDoc, getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
+import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-storage.js";
+
+// firebaseConfig
+const firebaseConfig = ({
+    apiKey: "AIzaSyDvYxzHNNlNv5wsAuBaAY7_nnCMBlxTZ6Q",
+    authDomain: "testing2-4bb02.firebaseapp.com",
+    projectId: "testing2-4bb02",
+    storageBucket: "gs://testing2-4bb02.appspot.com",
+    messagingSenderId: "905228859838",
+    appId: "1:905228859838:web:5e9a5d3e15d27b13e461ef",
+    measurementId: "G-GTDY3N9CK9"
+  });
+
+// Initialize Firebase and Firebase-services
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// Implement DATA
+var input = "B2.02.02";
+// var input = "B1.01.01";
+
+const inputArr = [];
+for (let index = 0; index < 3; index++) {
+    inputArr[index] = input.split(".")[index];
+}
+console.log(input);
+console.log(inputArr[0]);
+console.log(inputArr[1]+"."+inputArr[2]);
+
+var buildingNum = inputArr[0];
+var roomNum =inputArr[1]+"."+inputArr[2];
+
+
+try{
+    const docRef = doc(db, buildingNum, roomNum);
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+    console.log("Document data:", docSnap.data());
+    document.getElementById("main-room-description").innerHTML = docSnap.data().mainDescription;
+    document.getElementById("time-open-description").innerHTML = docSnap.data().timeOpen;
+    document.getElementById("room-rule-description").innerHTML = docSnap.data().rule;
+    } else {
+    // doc.data() will be undefined in this case
+    console.log("Invalid input");
+    document.getElementById("room-rule-description").innerHTML = "Invalid Input";
+    }
+}
+catch(err) {
+    console.log(err);
+    }
+
+// // key & value image
+// const str = getStorage(app);
+// var imgRef = buildingNum +'/' + roomNum +'.png';
+// const storageRef = ref(str, imgRef);
+
+// // Implement picture into html file
+// try{
+//     getDownloadURL(storageRef).then(
+//             function(url){
+//                 console.log(url);
+//                 document.getElementById("demo3").setAttribute("src", url);
+//         }
+//     )
+//     }catch(e){
+//         console.log(e);
+//     }

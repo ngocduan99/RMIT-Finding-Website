@@ -1,13 +1,14 @@
 console.log("this is javascript");
 //JSON: Javascript Object Notation
-fetch ("test.json")
+fetch ("data.json")
         .then(response => response.json()) //must have to read the json file
         .then(data =>{
             console.log(data);
             document.getElementById("demo").innerHTML = data.name;
         });
-//fetch () return a PROMISE in RESOLVES status with the value RESPONSE for that request
 
+
+//fetch () return a PROMISE in RESOLVES status with the value RESPONSE for that request
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
 // import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"; //using Firestore database for test
