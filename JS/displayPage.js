@@ -28,12 +28,6 @@ function colorLink(){
 linkColor.forEach(l => l.addEventListener('click',colorLink))
 
 
-
-
-
-
-
-
 /*================SEARCHBAR==================*/
 
 
@@ -136,6 +130,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // // Implement DATA
+
 // var input = "B2.02.02";
 var input = "B1.01.01";
 
@@ -150,6 +145,7 @@ console.log(inputArr[1]+"."+inputArr[2]);
 var buildingNum = inputArr[0];
 var roomNum =inputArr[1]+"."+inputArr[2];
 
+// //
 
 try{
     const docRef = doc(db, buildingNum, roomNum);
