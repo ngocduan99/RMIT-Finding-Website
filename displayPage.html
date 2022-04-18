@@ -40,84 +40,7 @@
     </header>
 
     <!-- ============NAVIGATION========== -->
-    <div class="nav" id = "navbar">
-        <nav class = "nav_container">
-            <div>
-                <a href="#" class="nav_link nav_logo">
-                    <i class='bx bx-disc nav_icon' ></i>
-                    <span class="nav_logoname"> RMIT FINDING </span>
-                </a>
-
-                <div class="nav_list">
-                    <div class="nav_items">
-                        <h3 class="nav_title"> Profile </h3>
-                        <a href="#" class="nav_link">
-                            <i class='bx bxs-home nav_icon'></i>
-                            <span class="nav_subname"> Homepage </span>
-                        </a>
-
-                        <div class="nav_dropdown">
-                            <a href="#" class="nav_link active">
-                                <i class='bx bxs-user-circle nav_icon' ></i>
-                                <span class="nav_subname"> Users </span>
-                                <i class='bx bxs-chevron-down nav_icon nav_dropdown-icon'></i>
-                            </a>
-
-                            <div class="nav_dropdown-collapse">
-                                <div class="nav_dropdown-contents">
-                                    <a href="#" class="nav_dropdown-items">Password</a>
-                                    <a href="#" class="nav_dropdown-items">Email</a>
-                                    <a href="#" class="nav_dropdown-items">Accounts</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="#" class="nav_link">
-                            <i class='bx bxs-chat nav_icon' ></i>
-                            <span class="nav_subname"> Messages </span>
-                        </a>
-                    </div>
-
-                    <div class="nav_items">
-                        <h3 class="nav_title"> Menu </h3>
-
-                        <div class="nav_dropdown">
-                            <a href="#" class="nav_link active">
-                                <i class='bx bxs-bell nav_icon' ></i>
-                                <span class="nav_subname"> Notifications </span>
-                                <i class='bx bxs-chevron-down nav_icon nav_dropdown-icon'></i>
-                            </a>
-
-                            <div class="nav_dropdown-collapse">
-                                <div class="nav_dropdown-contents">
-                                    <a href="#" class="nav_dropdown-items">Maintanences</a>
-                                    <a href="#" class="nav_dropdown-items">News</a>
-                                    <a href="#" class="nav_dropdown-items">Errors</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <a href="#" class="nav_link">
-                            <i class='bx bxs-compass nav_icon' ></i>
-                            <span class="nav_subname"> Navigations </span>
-                        </a>
-
-                        <a href="#" class="nav_link">
-                            <i class='bx bxs-bookmark nav_icon' ></i>
-                            <span class="nav_subname"> Saves </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#" class="nav_link nav_logout">
-                <i class='bx bx-log-out nav_icon' ></i>
-                <span class="nav_subname"> Log out </span>
-            </a>
-        </nav>
-    </div>
+    
 
 
     <!-- ==================MAIN BODY============== -->
@@ -125,64 +48,107 @@
         
 
         <div class = "des-heading">
-            <h1> Room description </h1>
+            <h1> DESCRIPTION </h1>
         </div>
     
         <!-- display image & room data layout-->
         <br>
-        <div class = "container-fluid">
-        <div class="row">
-            <div class="col-sm-5">
-                <img id=featured src="IMG/dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg">
-                <div id="slide-wrapper" >
-                    <img id="slideLeft" class="arrow" src="IMG/arrow-left.png">
-                    <div id="slider">
-                        <img class="thumbnail active" src="IMG/dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg">
-                        <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                        <img class="thumbnail" src="Buiding floor plan/B1/B1-Lv1.PNG">
+        <div class = "container">
+            <div class="row">
 
-                        <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                        <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                        <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                        <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                    </div>
-                    <img id="slideRight" class="arrow" src="IMG/arrow-right.png">
-
-                </div>
-
-            </div>
-            <div class ="col-sm-1"></div>
-            <div class="col-sm-5">
-                <div class="description-data">
-                    <div class = "description-title">
-                    <h1> RMIT CONNECT </h1>
-                    </div> 
-                    <br>
-                    <div class ="des-content">
-                        <div class="dcolumn">
-                            <p> Main description</p>
-                            <p id = "main-room-description"></p>
-                    
+                <!-- Image data -->
+                <div class="col-sm-6">
+                    <div class = "card">
+                        <div class="card-body">
+                            <img id=featured src="IMG/dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg">
+    
+                            <div id="slide-wrapper" >
+                                <img id="slideLeft" class="arrow" src="IMG/arrow-left.png">
+    
+    
+                            <div id="slider">
+                                <img class="thumbnail active" src="IMG/dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg">
+                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                                <img class="thumbnail" src="Buiding floor plan/B1/B1-Lv1.PNG">
+    
+                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
+                            </div>
+    
+                            <img id="slideRight" class="arrow" src="IMG/arrow-right.png">
+    
+                            </div>
                         </div>
-                        <div class="dcolumn">
-                            <p> Time opening </p>
-                            <p id= "time-open-description" ></p>
-                        </div>
-                        <div class="dcolumn">
-                            <p> Optional usage </p>
-                            <p id= "optional-usage"  ></p>
-                            
-                        </div>
-                        <div class="dcolumn">
-                            <p> Room rules </p>
-                            <p id="room-rule-description"></p>
-                        </div>
-
                     </div>
                 </div>
+    
+                <!-- Break column -->
+                <!-- <div class ="col-sm-1"></div> -->
+    
+                <!-- Description data -->
+                <div class="col-sm-6">
+                    <div class="card bg-dark border-light">
+                        <div class = "card-body">
+                            <div class="description-data">
+                                <div class = "card-header text-white text-center">
+                                   <h2> RMIT CONNECT </h2> 
+                                </div>
+                                <div class = "description-title">
+                                </div> 
+
+                                
+                                <div class ="des-content">
+                                    <!-- Main description -->
+                                    <div class="dcolumn">
+                                        <div class = "card bg-light border-light">
+                                            <div class = "card-body">
+                                                <h5 class = "card-title"> Main description </h5>
+                                                <p class = "card-text" id = "main-room-description"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Time opening -->
+                                    <div class="dcolumn">
+                                        <div class = "card bg-light border-light">
+                                            <div class = "card-body">
+                                                <h5 class="card-title"> Time opening </h5>
+                                                <p class="card-text" id= "time-open-description" ></p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Optional usage -->
+                                    <div class="dcolumn">
+                                        <div class= "card bg-light border-light ">
+                                            <div class = "card-body">
+                                                <h5 class="card-title"> Optional usage </h5>
+                                                <p class="card-text" id= "optional-usage"  ></p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Room rule -->
+                                    <div class="dcolumn">
+                                        <div class="card bg-light border-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Room rules </h5>
+                                                <p class = "card-text"id="room-rule-description"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
+
+
     <!-- floor plan image -->
         <br>
         <div class = "row">

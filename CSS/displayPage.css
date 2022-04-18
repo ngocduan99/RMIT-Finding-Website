@@ -8,7 +8,7 @@
     --title-height: 46px;
     --des-container: 518px;
     --des-contentbox: calc(var(--des-container) - var(--title-height));
-    --des-column: calc(var(--des-contentbox)/4);
+    --des-column: calc(var(--des-contentbox)/5);
 
 
 
@@ -324,8 +324,8 @@ main{
 
 .thumbnail{
 	object-fit: cover;
-	max-width: 180px;
-	max-height: 100px;
+	max-width: 100px;
+	max-height: 80px;
 	cursor: pointer;
 	opacity: 0.5;
 	margin: 5px;
@@ -364,7 +364,7 @@ main{
 }
 
 #slider::-webkit-scrollbar-thumb {
-  background-color: #dede2e;
+  background-color: var(--first-color);
   outline: 1px solid slategrey;
     border-radius: 100px;
 
