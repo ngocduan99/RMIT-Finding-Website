@@ -132,7 +132,11 @@ const db = getFirestore(app);
 // // Implement DATA
 
 // var input = "B2.02.02";
-var input = "B1.01.01";
+// var input = "B1.01.01";
+
+var input = document.getElementById("searchbar").value;  
+console.log(input);
+// var input = "B1.01.01";
 
 const inputArr = [];
 for (let index = 0; index < 3; index++) {
