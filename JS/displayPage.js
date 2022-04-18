@@ -116,6 +116,7 @@ buttonRight.addEventListener('click', function(){
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+
 import { collection, doc, getDoc, setDoc, getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
 import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-storage.js";
 
@@ -134,9 +135,9 @@ const firebaseConfig = ({
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Implement DATA
-var input = "B2.02.02";
-// var input = "B1.01.01";
+// // Implement DATA
+// var input = "B2.02.02";
+var input = "B1.01.01";
 
 const inputArr = [];
 for (let index = 0; index < 3; index++) {
@@ -158,6 +159,7 @@ try{
     document.getElementById("main-room-description").innerHTML = docSnap.data().mainDescription;
     document.getElementById("time-open-description").innerHTML = docSnap.data().timeOpen;
     document.getElementById("room-rule-description").innerHTML = docSnap.data().rule;
+
     } else {
     // doc.data() will be undefined in this case
     console.log("Invalid input");
@@ -166,7 +168,7 @@ try{
 }
 catch(err) {
     console.log(err);
-    }
+}
 
 // // key & value image
 // const str = getStorage(app);
