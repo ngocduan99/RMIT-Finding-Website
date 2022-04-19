@@ -145,7 +145,8 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // // Implement DATA
-
+var input = localStorage.getItem("userInput");
+console.log(input);
 // var input = "B2.02.02";
 // var input = "B1.01.01";
 

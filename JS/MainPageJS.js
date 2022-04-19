@@ -28,14 +28,6 @@ function colorLink(){
 linkColor.forEach(l => l.addEventListener('click',colorLink))
 
 /*================SEARCHBAR==================*/
-// function alertclick(){
-//     alert("error");
-//     location.reload();
-// }
-// function alertclick1(){
-//     alert("Choose your room");
-// }
-
 
 /* Searchbar filter function */
 // function SearchBar(){
@@ -60,24 +52,9 @@ linkColor.forEach(l => l.addEventListener('click',colorLink))
 //     };
 // };
 
-// Alert function
-// function alertclick(){
-//     var i,a,Inputvalue;
-//     var searchbarinput = document.getElementById("searchbar");
-//     var filter = searchbarinput.value.toUpperCase();
-//     var ul= document.getElementById("myUL");
-//     var li = ul.getElementsByTagName("li");
-//     for (i = 0; i < li.length; i++) {
-//         a = li[i].getElementsByTagName("a")[0];
-//         Inputvalue = a.textContent || a.innerText;
-//         if (Inputvalue.toUpperCase().indexOf(filter)>-1) {
-//             document.getElementById("btsearch").onclick= alert("Select your room");
-//             break;
-//         }
-//         else{
-//             alert("error");
-//             location.reload();
-//             break;
-//         }
-//     }
+
+function getuserinput(){
+    var input = document.getElementById("searchbar").value;  
+    savedate=input
+    localStorage.setItem("userInput",input);
 }
