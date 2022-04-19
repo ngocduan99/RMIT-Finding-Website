@@ -1,31 +1,4 @@
-/*=============NAV MENU SHOW===============*/
-const showMenu = (headerToggle,navbarID) =>{
-    const toggleBtn = document.getElementById(headerToggle),
-    nav = document.getElementById(navbarID)
 
-    if(headerToggle && navbarID){
-        toggleBtn.addEventListener('click', () => {
-            //add show_menu class to nav_menu class
-            nav.classList.toggle('show_menu')
-
-            //Change icon
-            toggleBtn.classList.toggle('bx-x')
-        })
-    }
-}
-
-showMenu('toggle','navbar')
-
-
-/*=============CHANGE COLOR===============*/
-const linkColor = document.querySelectorAll('.nav_link')
-
-function colorLink(){
-    linkColor.forEach(l => l.classList.remove('active'))
-    this.classList.add('active')
-}
-
-linkColor.forEach(l => l.addEventListener('click',colorLink))
 
 /*================SEARCHBAR==================*/
 
