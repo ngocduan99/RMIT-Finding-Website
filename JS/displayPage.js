@@ -104,10 +104,10 @@ buttonRight.addEventListener('click', function(){
 
 /* Tuan part */
 // getDATA();
-document.getElementById("search-button").onclick = function(){
-    var input = document.getElementById("search-input").value;
-    console.log(input);
-}
+// document.getElementById("search-button").onclick = function(){
+//     var input = document.getElementById("search-input").value;
+//     console.log(input);
+// }
 
 
 // //JSON: Javascript Object Notation
@@ -124,7 +124,6 @@ document.getElementById("search-button").onclick = function(){
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
-
 import { collection, doc, getDoc, setDoc, getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
 import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-storage.js";
 
@@ -136,20 +135,15 @@ const firebaseConfig = ({
     storageBucket: "rmit-finding.appspot.com",
     messagingSenderId: "588772101914",
     appId: "1:588772101914:web:57858d4a30dc76d4fca6a3"
+});
 
-  });
-
-  
 // Initialize Firebase and Firebase-services
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// // Implement DATA
-var input = localStorage.getItem("userInput");
-console.log(input);
-// var input = "B2.02.02";
-// var input = "B1.01.01";
 
+// // Implement DATA
+var input = localStorage.getItem("userInput")
 
 const inputArr = [];
 for (let index = 0; index < 3; index++) {
@@ -161,8 +155,6 @@ console.log(inputArr[1]+"."+inputArr[2]);
 
 var buildingNum = inputArr[0];
 var roomNum =inputArr[1]+"."+inputArr[2];
-
-// //
 
 try{
     const docRef = doc(db, buildingNum, roomNum);
@@ -178,8 +170,8 @@ try{
     // doc.data() will be undefined in this case
     // window.location.replace("index.html");
     console.log("Invalid input");
-    document.getElementById("room-rule-description").innerHTML = "Invalid Input";
-    
+    document.getElementById("display-mess").innerHTML = "Invalid Input";
+
     }
 }
 catch(err) {
@@ -188,19 +180,19 @@ catch(err) {
 
 
 // // key & value image
-const str = getStorage(app);
-var imgRef = buildingNum +'/' + roomNum +'.png';
-const storageRef = ref(str, imgRef);
+// const str = getStorage(app);
+// var imgRef = buildingNum +'/' + roomNum +'.png';
+// const storageRef = ref(str, imgRef);
 
-// Implement picture into html file
-try{
-    getDownloadURL(storageRef).then(
-            function(url){
-                console.log(url);
-                document.getElementById("test-image").setAttribute("src", url);
-        }
-    )
+// // Implement picture into html file
+// try{
+//     getDownloadURL(storageRef).then(
+//             function(url){
+//                 console.log(url);
+//                 document.getElementById("test-image").setAttribute("src", url);
+//         }
+//     )
 
-    }catch(e){
-        console.log(err);
-    }
+//     }catch(e){
+//         console.log(err);
+//     }
