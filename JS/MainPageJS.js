@@ -1,6 +1,20 @@
 
-
 /*================SEARCHBAR==================*/
+
+/* Alert function (Duan part test) */
+const searchButton = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
+searchButton.addEventListener('click', () => {
+  const inputValue = searchInput.value;
+  alert(inputValue);
+});
+
+// This is the model function alert in boostrap, Nick dua theo ma lam nhoa
+
+
+
+
+
 
 /* Searchbar filter function */
 // function SearchBar(){
