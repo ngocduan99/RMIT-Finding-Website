@@ -176,9 +176,9 @@ try{
 
     } else {
     // doc.data() will be undefined in this case
-    window.location.replace("index.html");
-    // console.log("Invalid input");
-    // document.getElementById("room-rule-description").innerHTML = "Invalid Input";
+    // window.location.replace("index.html");
+    console.log("Invalid input");
+    document.getElementById("room-rule-description").innerHTML = "Invalid Input";
     
     }
 }
