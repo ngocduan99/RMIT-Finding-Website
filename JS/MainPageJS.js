@@ -9,12 +9,27 @@ searchButton.addEventListener('click', () => {
   alert(inputValue);
 });
 
-// This is the model function alert in boostrap, Nick dua theo ma lam nhoa
+
+// Get user input
+localStorage.clear();
+document.getElementById("search-button").onclick =function(){
+    var input = document.getElementById("search-input").value;
+    var data = input.toUpperCase();
+    localStorage.setItem("userInput",data);
+    location.replace("displayPage.html")
+};
 
 
 
 
 
+// if(buildingNum != ""){
+//    
+// }
+// else{
+//     location.reload();
+// }
+// Initialize Firebase and Firebase-services
 
 /* Searchbar filter function */
 // function SearchBar(){
@@ -38,23 +53,3 @@ searchButton.addEventListener('click', () => {
 //         };
 //     };
 // };
-
-// get user input
-localStorage.clear();
-document.getElementById("btsearch").onclick =function(){
-    var input = document.getElementById("search-bar-main").value;
-    var data = input.toUpperCase();
-    console.log(input);
-    localStorage.setItem("userInput",data);
-    location.replace("displayPage.html")
-};
-
-// if(buildingNum != ""){
-//    
-// }
-// else{
-//     location.reload();
-// }
-// Initialize Firebase and Firebase-services
-
-   
