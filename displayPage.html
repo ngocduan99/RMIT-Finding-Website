@@ -52,101 +52,45 @@
         </div>
     
         <!-- display image & room data layout-->
-        <br>
-        <div class = "container">
-            <div class="row">
-
-                <!-- Image data -->
-                <div class="col-sm-6">
-                    <div class = "card">
-                        <div class="card-body">
-                            <img id=featured src="IMG/dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg">
-    
-                            <div id="slide-wrapper" >
-                                <img id="slideLeft" class="arrow" src="IMG/arrow-left.png">
-    
-    
-                            <div id="slider">
-                                <img class="thumbnail active" src="IMG/dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg">
-                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                                <img class="thumbnail" src="Buiding floor plan/B1/B1-Lv1.PNG">
-    
-                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                                <img class="thumbnail" src="IMG/680eed36-67af-42f2-8f29-72cac6dcb18e.jpg">
-                            </div>
-    
-                            <img id="slideRight" class="arrow" src="IMG/arrow-right.png">
-    
-                            </div>
+        <section class = "display-container">
+            <div class="row align-items-center container my-5 mx-auto">
+                <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                    </div>
-                </div>
-    
-                <!-- Break column -->
-                <!-- <div class ="col-sm-1"></div> -->
-    
-                <!-- Description data -->
-                <div class="col-sm-6">
-                    <div class="card bg-dark border-light">
-                        <div class = "card-body">
-                            <div class="description-data">
-                                <div class = "card-header text-white text-center">
-                                   <h2> RMIT CONNECT </h2> 
-                                </div>
-                                <div class = "description-title">
-                                </div> 
-
-                                
-                                <div class ="des-content">
-                                    <!-- Main description -->
-                                    <div class="dcolumn">
-                                        <div class = "card bg-light border-light">
-                                            <div class = "card-body">
-                                                <h5 class = "card-title"> Main description </h5>
-                                                <p class = "card-text" id = "main-room-description"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <!-- Time opening -->
-                                    <div class="dcolumn">
-                                        <div class = "card bg-light border-light">
-                                            <div class = "card-body">
-                                                <h5 class="card-title"> Time opening </h5>
-                                                <p class="card-text" id= "time-open-description" ></p>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <!-- Optional usage -->
-                                    <div class="dcolumn">
-                                        <div class= "card bg-light border-light ">
-                                            <div class = "card-body">
-                                                <h5 class="card-title"> Optional usage </h5>
-                                                <p class="card-text" id= "optional-usage"  ></p>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <!-- Room rule -->
-                                    <div class="dcolumn">
-                                        <div class="card bg-light border-light">
-                                            <div class="card-body">
-                                                <h5 class="card-title"> Room rules </h5>
-                                                <p class = "card-text"id="room-rule-description"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="IMG\dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" class="d-block w-100" alt="pic1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="IMG\680eed36-67af-42f2-8f29-72cac6dcb18e.jpg" class="d-block w-100" alt="pic2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="IMG\dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" class="d-block w-100" alt="pic3">
+                          </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                </div>
 
+                    <div class = "text col-lg-6 col-md-6 col-12 w-50 pt-5 pt-5">
+                        <h6> RMIT CONNECT </h6>
+                        <h2> Locate in the 1st floor of the Building 1 </h2>
+                        <p> PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP </p>
+                    </div>
+                    
+                </div>
             </div>
-        </div>
+        </section>
 
 
     <!-- floor plan image -->
@@ -170,4 +114,5 @@
 
 </body>
 <script type ="module" src="JS/displayPage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
