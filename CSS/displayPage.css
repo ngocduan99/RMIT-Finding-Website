@@ -11,7 +11,7 @@ body, html{
 /* Background */
 .bg{
     background: #fff;
-    background-image: url('bg.jpg');
+    background-image: url('bg2.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,25 +49,48 @@ body, html{
 }
 
 
-/* =========================Main CSS================== */
+/* =========================Main CSS====================== */
 .mid{
     width: 100%;
     height: 10vh;
     overflow: hidden;
 }
 
-.display-box{
 
+
+
+/*======= Carousel slide======== */
+
+/* Carousel control icon */
+
+.carousel-control-prev-icon{
+    font-size: 100px;
+}
+
+.carousel-control-next-icon{
+    font-size: 100px;
+}
+
+/* Carousel indicator */
+#carousel-button {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+/* Image carousel */
+.display-box{
+    
 }
 
 /* Align the text display */
-.display-box .text{
+/* .display-box .text{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     margin: auto;
-}
+} */
 
 /* Title of text */
 .display-box .text h2{
