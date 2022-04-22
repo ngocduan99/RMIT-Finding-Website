@@ -2,12 +2,12 @@
 /*================SEARCHBAR==================*/
 
 /* Alert function (Duan part test) */
-const searchButton = document.getElementById('search-button');
-const searchInput = document.getElementById('search-input');
-searchButton.addEventListener('click', () => {
-  const inputValue = searchInput.value;
-  alert(inputValue);
-});
+// const searchButton = document.getElementById('search-button');
+// const searchInput = document.getElementById('search-input');
+// searchButton.addEventListener('click', () => {
+//   const inputValue = searchInput.value;
+//   alert(inputValue);
+// });
 
 
 // Get user input
@@ -19,9 +19,7 @@ document.getElementById("search-button").onclick =function(){
     location.replace("displayPage.html")
 };
 
-
-
-
+// Overlay dark
 
 // if(buildingNum != ""){
 //    
