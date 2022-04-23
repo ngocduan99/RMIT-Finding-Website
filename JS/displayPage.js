@@ -1,32 +1,4 @@
 
-/*================SEARCHBAR==================*/
-
-// /* Searchbar filter function */
-// function SearchBar(){
-//     var searchbarinput = document.getElementById("searchbar");
-//     var filter = searchbarinput.value.toUpperCase();
-//     var ul= document.getElementById("myUL");
-//     var li = ul.getElementsByTagName("li");
-//     var i;
-//     var a;
-//     var Inputvalue;
-//     for (i = 0; i < li.length; i++) {
-//         a = li[i].getElementsByTagName("a")[0];
-//         Inputvalue = a.textContent || a.innerText;
-//         if (Inputvalue.toUpperCase().indexOf(filter) > -1) {
-//             li[i].style.display="";
-//             li[i].style.visibility = "visible";
-//         } 
-//         else {
-//             li[i].style.display="none";
-//             li[i].style.visibility = "hidden";
-//         }
-
-//     }
-// };
-
-
-
 
 /* ==================MAIN===============*/
 
@@ -73,41 +45,49 @@ const db = getFirestore(app);
 // // Implement DATA
 var input = localStorage.getItem("userInput")
 
-const inputArr = [];
-for (let index = 0; index < 3; index++) {
-    inputArr[index] = input.split(".")[index];
-}
-console.log(input);
-console.log(inputArr[0]);
-console.log(inputArr[1]+"."+inputArr[2]);
-
-var buildingNum = inputArr[0];
-var roomNum =inputArr[1]+"."+inputArr[2];
-
-try{
-    const docRef = doc(db, buildingNum, roomNum);
-    const docSnap = await getDoc(docRef);
-    if (docSnap.exists()) {
-    console.log("Document data:", docSnap.data());
-    document.getElementById("main-room-description").innerHTML = docSnap.data().mainDescription;
-    document.getElementById("time-open-description").innerHTML = docSnap.data().timeOpen;
-    document.getElementById("optional-usage").innerHTML = docSnap.data().optionalUsage;
-    document.getElementById("room-rule-description").innerHTML = docSnap.data().rule;
-    // display room name
-    document.getElementById("display-mess").innerHTML = docSnap.data().rule;
-
-    } else {
-    // doc.data() will be undefined in this case
-    // window.location.replace("index.html");
-    document.getElementById("display-mess").innerHTML = "Invalid Input";
-    alert("Room ID input not valid ! Please try again");
-    location.replace("index.html")
-
+if(input != ""){
+    const inputArr = [];
+    for (let index = 0; index < 3; index++) {
+        inputArr[index] = input.split(".")[index];
     }
+    console.log(input);
+    console.log(inputArr[0]);
+    console.log(inputArr[1]+"."+inputArr[2]);
+
+    var buildingNum = inputArr[0];
+    var roomNum =inputArr[1]+"."+inputArr[2];
+
+    try{
+        const docRef = doc(db, buildingNum, roomNum);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+            console.log("Document data:", docSnap.data());
+            document.getElementById("main-room-description").innerHTML = docSnap.data().mainDescription;
+            document.getElementById("time-open-description").innerHTML = docSnap.data().timeOpen;
+            document.getElementById("optional-usage").innerHTML = docSnap.data().optionalUsage;
+            document.getElementById("room-rule-description").innerHTML = docSnap.data().rule;
+            // display room name
+            document.getElementById("display-mess").innerHTML = docSnap.data().rule;
+
+        } 
+        else {
+            // doc.data() will be undefined in this case
+            // window.location.replace("index.html");
+            document.getElementById("display-mess").innerHTML = "Invalid Input";
+            alert("Room ID input not valid ! Please try again");
+            location.replace("index.html");
+        }
+    }
+    catch(err) {
+        console.log(err);
+    }
+
 }
-catch(err) {
-    console.log(err);
+else{
+    location.replace("index.html");
 }
+
+
 
 
 // // key & value image
