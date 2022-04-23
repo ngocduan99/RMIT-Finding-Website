@@ -94,7 +94,7 @@ try{
     document.getElementById("optional-usage").innerHTML = docSnap.data().optionalUsage;
     document.getElementById("room-rule-description").innerHTML = docSnap.data().rule;
     // display room name
-    // document.getElementById("display-mess").innerHTML = docSnap.data().rule;
+    document.getElementById("display-mess").innerHTML = docSnap.data().rule;
 
     } else {
     // doc.data() will be undefined in this case
