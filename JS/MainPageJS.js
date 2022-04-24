@@ -42,7 +42,7 @@ function checkdone(){
 document.getElementById("search-button").onclick =function(){
 
     var elem = document.getElementById("search-input").value;
-    var re = /^B+[0-10]+\.+[0][1-5]+\.+[0-9][0-9]$/;
+    var re = /^[Bb]+[0-10]+\.+[0][1-5]+\.+[0-9][0-9]$/;
 
     if(re.test(elem)){
        checkdone();
