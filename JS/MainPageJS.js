@@ -46,7 +46,6 @@ document.getElementById("search-button").onclick =function(){
 
     if(re.test(elem)){
        checkdone();
-     
     }
     else{
         alert("Your Input is Wrong. The input must have 8-9 letters and start with B. Example:B1.01.01" )
