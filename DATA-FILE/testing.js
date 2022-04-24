@@ -75,7 +75,7 @@ const db = getFirestore(app);
 //------------------Pulling the data from the database down to the webpage------------
 
 
-var input = "B2.02.02";
+var input = "B2.04.02";
 // var input = "B1.01.01";
 
 const inputArr = [];
@@ -112,7 +112,7 @@ console.log(err);
 
 //----------References to storage-------------
 const str = getStorage(app);
-var imgRef = buildingNum +'/' + roomNum +'.png';
+var imgRef = buildingNum +'/' + roomNum +'.1.png';
 const storageRef = ref(str, imgRef);
 
 // const storageRef = ref(str, 'building1/1stfloor/B2.1.10/0101.png');
