@@ -42,14 +42,14 @@ function checkdone(){
 document.getElementById("search-button").onclick =function(){
 
     var elem = document.getElementById("search-input").value;
-    var re = /^B+[0-10]+\.+[0-9][0-9]+\.+[0-9][0-9]$/;
+    var re = /^B+[0-10]+\.+[0][1-5]+\.+[0-9][0-9]$/;
 
     if(re.test(elem)){
        checkdone();
      
     }
     else{
-        alert("Your Input is Wrong. Example:B1.01.01")
+        alert("Your Input is Wrong. The input must have 8-9 letters and start with B. Example:B1.01.01" )
         location.reload();
        
     }
