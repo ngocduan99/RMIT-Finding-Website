@@ -71,25 +71,25 @@
                     <!-- Main description -->
                     <div class="main-description">
                     <h5> Main description </h5>
-                    <p id="main-room-description"> </p>
+                    <p class="text-dark" id="main-room-description"> </p>
                     </div>
 
                     <!-- Time opening -->
                     <div class="time-open">
                     <h5> Time opening: </h5>
-                    <p id="time-open-description"></p>                   
+                    <p class="text-dark" id="time-open-description"></p>                   
                     </div>
                     
                     <!-- Optional usage -->
                     <div class="optional-usage">
                     <h5> Optional usage: </h5>
-                    <p id="optional-usage"></p>          
+                    <p class ="text-dark" id="optional-usage"></p>          
                     </div>
 
                     <!-- Room rules -->
                     <div class="room-rules">
                     <h5> Room rules: </h5>
-                    <p id="room-rule-description"></p>                       
+                    <p class="text-dark" id="room-rule-description"></p>                       
                     </div>
 
                 </div>
@@ -103,20 +103,22 @@
                           <button type="button" id="carousel-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" id="carousel-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                           <button type="button" id="carousel-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" id="carousel-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         </div>
 
                         <!-- Inner slide (image)  -->
                         <div class="carousel-inner">
 
+                          <!-- Image 1 -->
                           <div class="carousel-item active" data-bs-interval="10000">
                             <img src="IMG\dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" id="room-img-1" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#myModal" alt="...">
-
                             <div class="carousel-caption d-none d-md-block">
                               <h5>First slide label</h5>
 
                             </div>
                           </div>
 
+                          <!-- Image 2 -->
                           <div class="carousel-item" data-bs-interval="2000">
                             <img src="IMG\dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" id="room-img-2" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
@@ -125,8 +127,18 @@
                             </div>
                           </div>
 
+                          <!-- Image 3 -->
                           <div class="carousel-item">
                             <img src="IMG\680eed36-67af-42f2-8f29-72cac6dcb18e.jpg" id="room-img-3" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Third slide label</h5>
+
+                            </div>
+                          </div>
+
+                          <!-- Image 4 -->
+                          <div class="carousel-item">
+                            <img src="Buiding floor plan/B1/B1-Lv1.PNG" width="500px" height="450px" id="room-img-4" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#myModal-2" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                               <h5>Third slide label</h5>
 
@@ -159,6 +171,22 @@
               </div>
               <div class="modal-body">
                 <img src="IMG/dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" width="1000px" height="600px" id="room-img1" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image of floor plan -->
+        <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="Buiding floor plan/B1/B1-Lv1.PNG" width="1200px" height="800px" id="room-img1" class="img-fluid">
               </div>
             </div>
           </div>
