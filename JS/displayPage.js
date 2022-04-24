@@ -67,7 +67,7 @@ if(input != ""){
             document.getElementById("optional-usage").innerHTML = docSnap.data().optionalUsage;
             document.getElementById("room-rule-description").innerHTML = docSnap.data().rule;
             // display room name
-            document.getElementById("display-mess").innerHTML = docSnap.data().rule;
+            document.getElementById("display-mess").innerHTML = docSnap.data().roomName;
 
         } 
         else {
