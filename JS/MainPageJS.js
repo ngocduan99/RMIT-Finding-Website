@@ -12,11 +12,18 @@
 
 // Get user input
 localStorage.clear();
+
 document.getElementById("search-button").onclick =function(){
     var input = document.getElementById("search-input").value;
-    var data = input.toUpperCase();
-    localStorage.setItem("userInput",data);
-    location.replace("displayPage.html")
+    if(input != ""){
+        var data = input.toUpperCase();
+        localStorage.setItem("userInput",data);
+        location.replace("displayPage.html")
+    }
+    else{
+        alert("Please input Room Number or School service")
+        location.reload();
+    }
 };
 
 
