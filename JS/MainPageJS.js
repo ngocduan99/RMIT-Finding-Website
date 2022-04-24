@@ -27,6 +27,8 @@ document.getElementById("search-button").onclick =function(){
     }
 };
 
+
+
 // function checkdone(){
 //     var input = document.getElementById("search-input").value;
     
@@ -54,6 +56,7 @@ document.getElementById("search-button").onclick =function(){
 //     }
   
 // }
+
 
 
 //check not null, bắt đầu bằng "B","b", 8-9 kí tự
