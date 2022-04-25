@@ -91,64 +91,65 @@ else{
 
 
 // key & value image
-const str = getStorage(app);
-var imgRef_1 = buildingNum +'/' + roomNum +'.1.png';
-var imgRef_2 = buildingNum +'/' + roomNum +'.2.png';
-var imgRef_3 = buildingNum +'/' + roomNum +'.3.png';
-var imgRef_4 = buildingNum +'/' + roomNum +'.4.png';
+// const str = getStorage(app);
+// var imgRef_1 = buildingNum +'/' + roomNum +'.1.PNG';
+// console.log(imgRef_1);
+// var imgRef_2 = buildingNum +'/' + roomNum +'.2.png';
+// var imgRef_3 = buildingNum +'/' + roomNum +'.3.png';
+// var imgRef_4 = buildingNum +'/' + roomNum +'.4.png';
 
 const storageRef_1 = ref(str, imgRef_1);
-const storageRef_2 = ref(str, imgRef_2);
-const storageRef_3 = ref(str, imgRef_3);
-const storageRef_4 = ref(str, imgRef_4);
+// const storageRef_2 = ref(str, imgRef_2);
+// const storageRef_3 = ref(str, imgRef_3);
+// const storageRef_4 = ref(str, imgRef_4);
 
 
 // Implement picture into html file
-try{
-    getDownloadURL(storageRef_1).then(
-            function(url){
-                console.log(url);
-                document.getElementById("room-img-1").setAttribute("src", url);
-        }
-    )
-    }
-catch(e){
-    console.log(err);
-}
+// try{
+//     getDownloadURL(storageRef_1).then(
+//             function(url){
+//                 console.log(url);
+//                 document.getElementById("room-img-1").setAttribute("src", url);
+//         }
+//     )
+//     }
+// catch(e){
+//     console.log(err);
+// }
     
-try{
-    getDownloadURL(storageRef_2).then(
-        function(url){
-            console.log(url);
-            document.getElementById("room-img-2").setAttribute("src", url);
-            }
-    )
-}
-catch(e){
-    console.log(err);
-}    
+// try{
+//     getDownloadURL(storageRef_2).then(
+//         function(url){
+//             console.log(url);
+//             document.getElementById("room-img-2").setAttribute("src", url);
+//             }
+//     )
+// }
+// catch(e){
+//     console.log(err);
+// }    
 
-try{
-    getDownloadURL(storageRef_3).then(
-        function(url){
-            console.log(url);
-            document.getElementById("room-img-3").setAttribute("src", url);
-        }
-    )
-    }
-catch(e){
-    console.log(err);
-}
+// try{
+//     getDownloadURL(storageRef_3).then(
+//         function(url){
+//             console.log(url);
+//             document.getElementById("room-img-3").setAttribute("src", url);
+//         }
+//     )
+//     }
+// catch(e){
+//     console.log(err);
+// }
 
-try{
-    getDownloadURL(storageRef_4).then(
-            function(url){
-                console.log(url);
-                document.getElementById("room-img-4").setAttribute("src", url);
-        }
-    )
-    }
-catch(e){
-    console.log(err);
-}
+// try{
+//     getDownloadURL(storageRef_4).then(
+//             function(url){
+//                 console.log(url);
+//                 document.getElementById("room-img-4").setAttribute("src", url);
+//         }
+//     )
+//     }
+// catch(e){
+//     console.log(err);
+// }
             
