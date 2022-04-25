@@ -45,7 +45,7 @@ document.getElementById("search-button").onclick =function(){
 
 // document.getElementById("search-button").onclick =function(){
 //     var elem = document.getElementById("search-input").value;
-//     var re = /^[bB]+[1-9]+\.+[0][1-5]+\.+[0-9][0-9]$/;
+//     var re = /^[bB]+[1-9"10"]+\.+[0][1-5]+\.+[0-9][0-9]$/;
 
 //     if(re.test(elem)){
 //        checkdone();
