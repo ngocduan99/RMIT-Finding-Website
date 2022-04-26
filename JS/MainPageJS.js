@@ -11,25 +11,9 @@
 
 
 // Get user input
-localStorage.clear();
+// localStorage.clear();
 
-document.getElementById("search-button").onclick =function(){
-    var input = document.getElementById("search-input").value;
-    
-    if(input != ""){
-        var data = input.toUpperCase();
-        localStorage.setItem("userInput",data);
-        location.replace("displayPage.html")
-    }
-    else{
-        alert("Please input Room Number or School service")
-        location.reload();
-    }
-};
-
-
-
-// function checkdone(){
+// document.getElementById("search-button").onclick =function(){
 //     var input = document.getElementById("search-input").value;
     
 //     if(input != ""){
@@ -41,21 +25,37 @@ document.getElementById("search-button").onclick =function(){
 //         alert("Please input Room Number or School service")
 //         location.reload();
 //     }
-// }
+// };
 
-// document.getElementById("search-button").onclick =function(){
-//     var elem = document.getElementById("search-input").value;
-//     var re = /^[bB]+[1-9"10"]+\.+[0][1-5]+\.+[0-9][0-9]$/;
 
-//     if(re.test(elem)){
-//        checkdone();
-//     }
-//     else{
-//         alert("Wrong input type")
-//         location.reload();
-//     }
+
+function checkdone(){
+    var input = document.getElementById("search-input").value;
+    
+    if(input != ""){
+        var data = input.toUpperCase();
+        localStorage.setItem("userInput",data);
+        location.replace("displayPage.html")
+    }
+    else{
+        alert("Please input Room Number or School service")
+        location.reload();
+    }
+}
+
+document.getElementById("search-button").onclick =function(){
+    var elem = document.getElementById("search-input").value;
+    var re = /^[bB]+[1-9"10"]+\.+[0][1-5]+\.+[0-9][0-9]$/;
+
+    if(re.test(elem)){
+       checkdone();
+    }
+    else{
+        alert("Wrong input type")
+        location.reload();
+    }
   
-// }
+}
 
 
 
