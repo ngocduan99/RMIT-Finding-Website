@@ -91,8 +91,8 @@ else{
 
 
 // key & value image
-// const str = getStorage(app);
-// var imgRef_1 = buildingNum +'/' + roomNum +'.1.PNG';
+const str = getStorage(app);
+var imgRef_1 = buildingNum +'/' + roomNum +'.1.PNG';
 // console.log(imgRef_1);
 // var imgRef_2 = buildingNum +'/' + roomNum +'.2.png';
 // var imgRef_3 = buildingNum +'/' + roomNum +'.3.png';
@@ -105,17 +105,17 @@ const storageRef_1 = ref(str, imgRef_1);
 
 
 // Implement picture into html file
-// try{
-//     getDownloadURL(storageRef_1).then(
-//             function(url){
-//                 console.log(url);
-//                 document.getElementById("room-img-1").setAttribute("src", url);
-//         }
-//     )
-//     }
-// catch(e){
-//     console.log(err);
-// }
+try{
+    getDownloadURL(storageRef_1).then(
+            function(url){
+                console.log(url);
+                document.getElementById("room-img-1").setAttribute("src", url);
+        }
+    )
+    }
+catch(e){
+    console.log(err);
+}
     
 // try{
 //     getDownloadURL(storageRef_2).then(

@@ -14,7 +14,9 @@
     <title> Map Display </title>
 
 </head>
-<body class="bg">
+<body>
+  <div class="bg-image" style="background-image: url(bg2.jpg);
+  height: 100vh;" >
     <!-- Overlay -->
     <div class = "overlay" id ="overlay" onclick="off()"></div>
     <!-- Container -->
@@ -47,6 +49,7 @@
               </div>
             </div>
         </nav>
+    </div>
         <!-- Nav ends -->
 
     
@@ -56,8 +59,8 @@
     <main>
         <!-- <section class="mid"></section> -->
         <!-- display image & room data layout-->
-        <section class = "display-box bg-white py-5">
-            <div class="row align-item-center container my-5 mx-auto">
+        <section class = "display-box bg-white pt-5">
+            <div class="row align-item-center container mx-auto">
                 
                 <!-- Text -->
                 <div class="text col-sm-6 col-md-6 col-lg-6 col-12 text-light">
@@ -65,7 +68,10 @@
                     <h2 id ="display-mess" > Invalid Room </h2>
 
                     <!-- Location (result) -->
+                    <div class="location-part">
                     <h5> Location </h5>
+                    <p class="text-dark" id="location"></p>
+                    </div>
                     <br>
 
                     <!-- Main description -->
@@ -111,8 +117,8 @@
 
                           <!-- Image 1 -->
                           <div class="carousel-item active" data-bs-interval="10000">
-                            
-                            <img src="IMG\dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" id="room-img-1" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#myModal" alt="Room imgage">
+                            <!-- src="IMG\dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" -->
+                            <img  id="room-img-1" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#myModal" alt="Room imgage">
                             <div class="carousel-caption d-none d-md-block">
                               <h5>First sight</h5>
 
@@ -194,6 +200,7 @@
         </div>
         <!-- End of modal image -->
     </main>
+    </div>
 </body>
 
 <!-- =================FOOTER================ -->
