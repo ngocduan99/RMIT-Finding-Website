@@ -8,6 +8,8 @@ body, html{
 
 }
 
+
+
 /* Background */
 .bg{
     background: #fff;
@@ -96,22 +98,22 @@ body, html{
 .display-box .text h2{
     color: red;
     font-weight: 700;
-    font-size: 3rem;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    
 }
 
 .display-box .text h6{
     color: #f7f5f4;
     font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 2px;
+    font-size: 0.8rem;
+    
 }
 
 .display-box .text p{
     color: #f7f5f4;
     font-weight: 400;
-    font-size: 1.1rem;
-    letter-spacing: 2px;
+    font-size: 0.9rem;
+    
 }
 
 
