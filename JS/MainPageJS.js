@@ -104,4 +104,9 @@ const firebaseConfig = ({
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+var inputValue = document.getElementById("search-input").value;
 
+let room= doc(db,'B1/01.01');
+
+console.log(room);
+console.log(collection);

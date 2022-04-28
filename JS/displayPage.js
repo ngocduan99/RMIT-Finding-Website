@@ -120,7 +120,10 @@ try{
         }
     )
     }
-    
+}
+catch(e){
+    console.log(err);
+} 
     // getDownloadURL(storageRef_2).then(
     //     function(url2){
     //         console.log(url2);
@@ -128,25 +131,8 @@ try{
     // }
     
     // )
-    // getDownloadURL(storageRef_3).then(
-    //     function(url3){
-    //         console.log(url3);
-    //         document.getElementById("room-img-3").setAttribute("src", url3);
-    // }
-    // )
 
-    // getDownloadURL(storageRef_4).then(
-    //     function(url4){
-    //         console.log(url4);
-    //         document.getElementById("room-img-4").setAttribute("src", url4);
-    // }
 
-    // )
-
-    }
-catch(e){
-    console.log(err);
-}
 
 
     
