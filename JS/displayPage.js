@@ -92,13 +92,14 @@ else{
 
 // key & value image
 const str = getStorage(app);
-var imgRef_1 = buildingNum +'/' + roomNum +'.1.PNG';
-// console.log(imgRef_1);
-// var imgRef_2 = buildingNum +'/' + roomNum +'.2.png';
-// var imgRef_3 = buildingNum +'/' + roomNum +'.3.png';
-// var imgRef_4 = buildingNum +'/' + roomNum +'.4.png';
+// var imgRef_1 = buildingNum +'/' + roomNum +'.1.PNG';
+// var imgRef_2 = buildingNum +'/' + roomNum +'.2.PNG';
+// var imgRef_3 = buildingNum +'/' + roomNum +'.3.PNG';
+// var imgRef_4 = buildingNum +'/' + roomNum +'.4.PNG';
 
-const storageRef_1 = ref(str, imgRef_1);
+
+
+// const storageRef_1 = ref(str, imgRef_1);
 // const storageRef_2 = ref(str, imgRef_2);
 // const storageRef_3 = ref(str, imgRef_3);
 // const storageRef_4 = ref(str, imgRef_4);
@@ -106,16 +107,48 @@ const storageRef_1 = ref(str, imgRef_1);
 
 // Implement picture into html file
 try{
-    getDownloadURL(storageRef_1).then(
+   
+    for(let i=1; i<5; i++){
+        var imgRef_ = buildingNum +'/' + roomNum +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
             function(url){
                 console.log(url);
-                document.getElementById("room-img-1").setAttribute("src", url);
+                document.getElementById("room-img-"+i).setAttribute("src", url);
         }
     )
+    }
+    
+    // getDownloadURL(storageRef_2).then(
+    //     function(url2){
+    //         console.log(url2);
+    //         document.getElementById("room-img-2").setAttribute("src", url2);
+    // }
+    
+    // )
+    // getDownloadURL(storageRef_3).then(
+    //     function(url3){
+    //         console.log(url3);
+    //         document.getElementById("room-img-3").setAttribute("src", url3);
+    // }
+    // )
+
+    // getDownloadURL(storageRef_4).then(
+    //     function(url4){
+    //         console.log(url4);
+    //         document.getElementById("room-img-4").setAttribute("src", url4);
+    // }
+
+    // )
+
     }
 catch(e){
     console.log(err);
 }
+
+
     
 // try{
 //     getDownloadURL(storageRef_2).then(
