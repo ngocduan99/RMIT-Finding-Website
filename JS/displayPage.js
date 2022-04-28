@@ -186,3 +186,34 @@ catch(e){
 //     console.log(err);
 // }
             
+
+/*=====Duan part====*/ 
+// Get the image and insert it into the modal
+
+// Image 1
+var img = document.getElementById("room-img-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("room-img-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("room-img-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("room-img-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
