@@ -138,32 +138,33 @@ var b1Arr = ["B1.01.08","B1.01.09","B1.01.10", "B1.01.11", "B1.01.13", "B1.01.14
 //     }
 
 
-//     const searchInput = document.getElementById("search-input");
-//     const searchWrapper = document.querySelector('.wrapper');
-//     const resultsWrapper = document.querySelector('.results')
+    const searchInput = document.getElementById("search-input");
+    const searchWrapper = document.querySelector('.wrapper');
+    const resultsWrapper = document.querySelector('.results')
 
-//     searchInput.addEventListener('keyup', () => {
-//          let results = [];
-//     let input = searchInput.value;
-//     // console.log(input)
-//      if(input.length){
-//         results = b1Arr.filter((item) => {
-//             return item.toLowerCase().includes(input.toLowerCase());
-//         })
+    searchInput.addEventListener('keyup', () => {
+         let results = [];
+    let input = searchInput.value;
+     if(input.length){
+        results = b1Arr.filter((item) => {
+            return item.toLowerCase().includes(input.toLowerCase());
+        })
+    }
+    else{
+        resultsWrapper.innerHTML="";
+    }
+    renderResults(results);
+    }) 
 
-//     }
-//     renderResults(results);
-//     }) 
+   function renderResults(results){
+        if(!results.length){
+            return searchWrapper.classList.remove('show');  
+        }
+        let content = results.map((item) => {
+            return `<li style="padding: 4px;"><a href = "displayPage.html" style = "text-decoration: none">${item}</a></li>`;
+        }).join('')
+        console.log(content);
 
-//    function renderResults(results){
-//         if(!results.length){
-//             return searchWrapper.classList.remove('show');  
-//         }
-//         let content = results.map((item) => {
-//             return `<li><a href = "displayPage.html">${item}</a></li>`;
-//         }).join('')
-//         console.log(content);
-
-//         searchWrapper.classList.add('show');
-//         resultsWrapper.innerHTML = `<ul>${content}</ul>`
-//    }
+        searchWrapper.classList.add('show');
+        resultsWrapper.innerHTML = `<ul style= "list-style-type: none; background-color: white; width: 500px;">${content}</ul>`
+   }
