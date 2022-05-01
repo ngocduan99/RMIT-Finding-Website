@@ -161,10 +161,10 @@ var b1Arr = ["B1.01.08","B1.01.09","B1.01.10", "B1.01.11", "B1.01.13", "B1.01.14
             return searchWrapper.classList.remove('show');  
         }
         let content = results.map((item) => {
-            return `<li style="padding: 4px;"><a href = "displayPage.html" style = "text-decoration: none">${item}</a></li>`;
+            return `<li style="padding: 4px; " ><a href = "displayPage.html" style = "text-decoration: none; color: black;">${item}</a></li>`;
         }).join('')
         console.log(content);
 
         searchWrapper.classList.add('show');
-        resultsWrapper.innerHTML = `<ul style= "list-style-type: none; background-color: white; width: 500px;">${content}</ul>`
+        resultsWrapper.innerHTML = `<ul style= "list-style-type: none; background-color: white; width: 700px;">${content}</ul>`
    }
