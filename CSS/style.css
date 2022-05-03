@@ -39,11 +39,17 @@ body, html, main{
     top: 40%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
 }
 
 
 /* Click search box */
+/* #search-button{
+    top: 0%;
+    left: 75%;
+    position: absolute;
+} */
+
 .search-input:focus{
     outline: none;
     -webkit-box-shadow: none;
