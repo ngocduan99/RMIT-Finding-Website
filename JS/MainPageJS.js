@@ -11,7 +11,7 @@
 
 
 // Get user input
-// localStorage.clear();
+
 
 // document.getElementById("search-button").onclick =function(){
 //     var input = document.getElementById("search-input").value;
@@ -27,7 +27,7 @@
 //     }
 // };
 
-
+localStorage.clear();
 
 function checkdone(){
     var input = document.getElementById("search-input").value;
@@ -78,10 +78,6 @@ var b1Arr = ["B1.01.02", "B1.01.13", "B1.01.14", "B1.01.15", "B1.01.17", "B1.01.
 "B8.04.03","B8.04.04","B8.04.05","B8.04.06","B8.04.07","B8.04.08"]
 
 
-
-
-
-
     const searchInput = document.getElementById("search-input");
     const searchWrapper = document.querySelector('.wrapper');
     const resultsWrapper = document.querySelector('.results')
@@ -93,22 +89,32 @@ var b1Arr = ["B1.01.02", "B1.01.13", "B1.01.14", "B1.01.15", "B1.01.17", "B1.01.
         results = b1Arr.filter((item) => {
             return item.toLowerCase().includes(input.toLowerCase());
         })
+      
     }
     else{
         resultsWrapper.innerHTML="";
     }
+    
     renderResults(results);
+    
+    localStorage.setItem("userInput", resultsWrapper.querySelector('ul li').getAttribute("data-value"));
+
+    
     }) 
 
    function renderResults(results){
         if(!results.length){
             return searchWrapper.classList.remove('show');  
         }
+
         let content = results.map((item) => {
-            return `<li style="padding: 4px; " ><a href = "displayPage.html" style = "text-decoration: none; color: black;">${item}</a></li>`;
-        }).join('')
-        console.log(content);
+            return `<li style="padding: 4px;"  data-value="${item}"><a href = "displayPage.html" style = "text-decoration: none; color: black;">${item}</a></li>`;
+        }).join('');
+      
+      
 
         searchWrapper.classList.add('show');
-        resultsWrapper.innerHTML = `<ul style= "list-style-type: none; background-color: white; width: 700px;">${content}</ul>`
-   }
+        resultsWrapper.innerHTML = `<ul id="rooms" style= "list-style-type: none; background-color: white; width: 700px;">${content}</ul>`;
+
+       
+   };
