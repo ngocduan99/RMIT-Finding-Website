@@ -1,23 +1,22 @@
 
 /* =====================Index css================== */
 
+*{
+    font-family: montserrat;
+}
 
-/* Body */
-body, html{
-    height: 100%;
-
+/* Section */
+.section-padding{
+    padding: 100px 0;
 }
 
 
-
-
-
-/* Search bar (BOX) */
-.search-box{
-    top: 30%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+/* Search bar container */
+.search-container{
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
 
@@ -31,10 +30,7 @@ body, html{
 
 /* =========================Main CSS====================== */
 
-/* Section */
-.section-padding{
-    padding: 100px 0;
-}
+
 
 /*======= Carousel slide======== */
 
@@ -87,10 +83,24 @@ body, html{
 .display-box .text p{
     color: #f7f5f4;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     
 }
 
 
 
+/* ===============MEDIA SCREEN================ */
+@media only screen and (min-width: 768px) and (min-width: 991px) {
+    .card{
+        margin-bottom: 30px;
+    }
+    
+}
 
+@media only screen and (max-width: 767px){
+    .card{
+        margin-bottom: 30px;
+    }
+
+}
+    

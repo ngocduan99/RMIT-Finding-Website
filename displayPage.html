@@ -17,8 +17,6 @@
 
 
 <body>
-    <!-- Overlay -->
-    <div class="bg-image" style="background-image: url('bg2.jpg'); height: 100vh; background-repeat: no-repeat; background-size: 100%;">
     <!-- Container -->
     <div class = "container">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -50,15 +48,27 @@
             </div>
         </nav>
     </div>
+
         <!-- Nav ends -->
-
-    
-
+        <!-- Search Bar (BOX) (Important) -->
+        <div class="bg-search bg-image" style="background-image: url(bg.jpg); background-repeat: no-repeat; height: 100%; width: 100%; background-size: 100%;">
+        <div class = "col-sm-6 col-lg-6 col-11 mx-auto my-auto search-box h-50">
+          <div class="container search-container">
+            <div class = "col-md-12">
+                <!-- Title search box -->
+                <div class="pb-3 text-light h3 text-center" style="font-weight: bold;">
+                  <span class="text-danger"> BINGO! </span> YOU FOUND THIS <span class="text-danger"> ROOM </span>!!!
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- Search bar (BOX) ends -->
 
     <!-- ==================MAIN BODY============== -->
         <!-- display image & room data layout-->
         <section id="display-box" class = "display-box bg-white container pt-5 pb-5 section-padding">
-            <div class="row container">
+            <div class="display-container row container pt-5 pb-5 shadow-lg bg-light rounded">
                 
                 <!-- Text -->
                 <div class="text col-sm-6 col-md-6 col-lg-6 col-12 text-light">
@@ -116,7 +126,7 @@
                           <!-- Image 1 -->
                           <div class="carousel-item active" data-bs-interval="10000">
                             <!-- src="IMG\dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" -->
-                            <img id="room-img-1" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#myModal" alt="Room imgage">
+                            <img id="room-img-1" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#myModal" alt="Room image">
                             <div class="carousel-caption d-none d-md-block">
                               <h5>First sight</h5>
 
@@ -184,7 +194,6 @@
         </div>
         <!-- End of modal image -->
     <!-- =================FOOTER================ -->
-    </div>
   <!-- Footer -->
   <div class="footer bg-dark p-2 text-center">
     <div class="container">
