@@ -1,45 +1,24 @@
 
 /* =====================Index css================== */
 
-
-/* Body */
-body, html{
-    height: 100%;
-
+*{
+    font-family: montserrat;
 }
 
+/* Navbar */
+
+
+/* Section */
+.section-padding{
+    padding: 100px 0;
+}
+
+/* Search bar container */
 .search-container{
     justify-content: center;
     align-items: center;
     padding-top: 15%;
 }
-
-/* Background */
-/* .bg{
-    background: #fff;
-    background-image: url('bg.jpg');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-
-/* Overlay */
-#overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #000;
-    opacity: 0.2;
-    height: 100%;
-    width: 100%;
-    
-  }
-
-
-/* Search bar (BOX) */
-
 
 
 /* Click search box */
@@ -51,10 +30,25 @@ body, html{
 }
 
 
-/* Card deck */
+/* Card service */
+.services .card-body i{
+    font-size: 50px;
+}
 
 
-/* =====================Main=================== */
+/* ===============MEDIA SCREEN================ */
+@media only screen and (min-width: 768px) and (min-width: 991px) {
+    .card{
+        margin-bottom: 30px;
+    }
+    
+}
 
+@media only screen and (max-width: 767px){
+    .card{
+        margin-bottom: 30px;
+    }
+}
+    
 
     
