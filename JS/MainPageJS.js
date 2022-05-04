@@ -118,7 +118,7 @@ var b1Arr = ["B1.01.02", "B1.01.13", "B1.01.14", "B1.01.15", "B1.01.17", "B1.01.
       
 
         searchWrapper.classList.add('show');
-        resultsWrapper.innerHTML = `<ul id="rooms" style= "list-style-type: none; background-color: white; width:685px;">${content}</ul>`;
+        resultsWrapper.innerHTML = `<ul id="rooms" style= "list-style-type: none; background-color: white; width:auto;">${content}</ul>`;
 
        
    };
