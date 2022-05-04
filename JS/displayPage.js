@@ -62,6 +62,7 @@ if(input != ""){
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
             console.log("Document data:", docSnap.data());
+            document.getElementById("room-id").innerHTML = docSnap.data().location;
             document.getElementById("main-room-description").innerHTML = docSnap.data().mainDescription;
             document.getElementById("time-open-description").innerHTML = docSnap.data().timeOpen;
             document.getElementById("optional-usage").innerHTML = docSnap.data().optionalUsage;

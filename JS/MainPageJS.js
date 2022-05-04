@@ -96,8 +96,12 @@ var b1Arr = ["B1.01.02", "B1.01.13", "B1.01.14", "B1.01.15", "B1.01.17", "B1.01.
     }
     
     renderResults(results);
+
+    $("#rooms li").click(function() {
+        localStorage.setItem("userInput",this.id);
+    });
+
     
-    localStorage.setItem("userInput", resultsWrapper.querySelector('ul li').getAttribute("data-value"));
 
     
     }) 
@@ -108,7 +112,7 @@ var b1Arr = ["B1.01.02", "B1.01.13", "B1.01.14", "B1.01.15", "B1.01.17", "B1.01.
         }
 
         let content = results.map((item) => {
-            return `<li style="padding-bottom: 8px;"  data-value="${item}"><a href = "displayPage.html" style = "text-decoration: none; color: black;">${item}</a></li>`;
+            return `<li style="padding-bottom: 8px;" id="${item}"  data-value="${item}"><a href = "displayPage.html" style = "text-decoration: none; color: black;">${item}</a></li>`;
         }).join('');
       
       
