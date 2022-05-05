@@ -1,0 +1,31 @@
+/* =====================Index css================== */
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================Main CSS====================== */
+
+/* Section */
+.section-padding{
+    padding: 100px 0;
+}
+
+/* Service info */
+.service-container{
+    padding-top: 10%;
+}
+/* ===============MEDIA SCREEN================ */
+@media only screen and (min-width: 768px) and (min-width: 991px) {
+    .service-container{
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .service-container{
+        padding-top: 20%;
+    }
+}
