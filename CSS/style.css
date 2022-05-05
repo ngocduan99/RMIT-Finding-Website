@@ -2,7 +2,7 @@
 /* =====================Index css================== */
 
 *{
-    font-family: montserrat;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar */
@@ -34,6 +34,7 @@
 .services .card-body i{
     font-size: 50px;
 }
+
 
 
 /* ===============MEDIA SCREEN================ */
