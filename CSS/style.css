@@ -14,6 +14,10 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
 }
 
 .mid video{
@@ -22,12 +26,14 @@
     pointer-events: none;
     object-fit: cover;
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-70%);
 }
 
-
+.hero{
+    position: relative;
+}
 
 
 /* Section */
@@ -70,13 +76,14 @@
 
 
 /* ===============MEDIA SCREEN================ */
-@media only screen and (min-width: 768px) and (min-width: 991px) {
+@media only screen and (min-width: 768px) and (min-width: 820px) {
     .card{
         margin-bottom: 30px;
     }
     .results::-webkit-scrollbar {
         display: none;
       }
+
     
 }
 
@@ -86,7 +93,13 @@
     }
     .results::-webkit-scrollbar {
         display: none;
-      }
+    }
+
+    .mid video{
+        width: 100%;
+        height: 100%;
+    }
+    
 }
     
 
