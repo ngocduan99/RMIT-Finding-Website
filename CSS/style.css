@@ -6,6 +6,28 @@
 }
 
 /* Navbar */
+.navbar{
+    z-index: 1000;
+}
+/* Video heros */
+.mid{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mid video{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
 
 
 /* Section */
