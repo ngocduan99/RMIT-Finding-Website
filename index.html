@@ -55,11 +55,7 @@
                     WHICH <span class="text-danger"> ROOM </span> YOU WANT TO FIND?
                 </div>
             </div>
-            <div class = "col-md-12">
-              <div class="text-light" style="font-size: 0.7rem ;" id="example-room">
-                B(buildingNumber).(floorNumber).(roomNumber)
-              </div>
-            </div>
+            
             <!-- Container search box -->
             <form>
               <!-- show vô class -->
@@ -71,7 +67,12 @@
                 <span class="input-group-btn">
                     <button id="search-button" type="button" class="btn btn-warning" style="margin-left: 5px;"> Search
                     </button>
-                </span> 
+                </span>
+                <div class = "col-md-12">
+                  <div class="text-light" style="font-size: 0.7rem ;" id="example-room">
+                    Example: B1.01.01(Building 1, Floor 1, Room 1)
+                  </div>
+                </div> 
             </div>  
             </div>
             <div class="results" style="overflow-y:scroll; height: 100px; width: auto; margin-top: 10px;"></div>
