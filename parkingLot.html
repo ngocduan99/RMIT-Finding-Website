@@ -71,16 +71,22 @@
             <div class="col-lg-8 col-md-12 col-12 ps-lg-5">
                 <div class="service-test text-light">
                     <div class="service-title">
-                        <h2> RMIT Provide The Best Quality <br> School Service Ever </h2>
+                        <h2>Motorbike Parking </h2>
                     </div>
                     <div class="service-location">
-                        <h4> Location: <span class="h5" style="font-size: 1.1rem"> Lorem </span> </h4>
+                        <h4> Location: <span class="h5" style="font-size: 1.1rem" id="motor-location"></span> </h4>
                     </div>
                     <div class="service-description">
-                        <h4> Description: <span class="h5" style="font-size: 1.1rem"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam vitae provident consectetur amet iusto labore est dolores eius repudiandae accusamus tempore dolore dignissimos explicabo delectus totam, reiciendis eos optio similique? </span></h4>
+                        <h4> Description: <span class="h5" style="font-size: 1.1rem" id="motor-description"></span></h4>
                     </div>
                     <div class="service-rule">
-                        <h4> Rules: <span class="h5" style="font-size: 1.1rem"> No </span> </h4>
+                        <h4> Rules: <span class="h5" style="font-size: 1.1rem" id="motor-rule"> </span> </h4>
+                    </div>
+                    <div class="service-fee">
+                        <h4> Fee: <span class="h5" style="font-size: 1.1rem" id="motor-fee"> </span> </h4>
+                    </div>
+                    <div class="service-time">
+                        <h4> Times: <span class="h5" style="font-size: 1.1rem" id="motor-time"> </span> </h4>
                     </div>
                 </div>
             </div>
@@ -95,23 +101,86 @@
             <div class="col-lg-8 col-md-12 col-12 ps-lg-5">
                 <div class="service-test">
                     <div class="service-title">
-                        <h2> RMIT Provide The Best Quality <br> School Service Ever </h2>
+                        <h2> Car Parking</h2>
                     </div>
                     <div class="service-location">
-                        <h4> Location: <span class="h5" style="font-size: 1.1rem"> Lorem </span> </h4>
+                        <h4> Location: <span class="h5" style="font-size: 1.1rem" id="car-location"></span> </h4>
                     </div>
                     <div class="service-description">
-                        <h4> Description: <span class="h5" style="font-size: 1.1rem"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam vitae provident consectetur amet iusto labore est dolores eius repudiandae accusamus tempore dolore dignissimos explicabo delectus totam, reiciendis eos optio similique? </span></h4>
+                        <h4> Description: <span class="h5" style="font-size: 1.1rem" id="car-description"></span></h4>
                     </div>
                     <div class="service-rule">
-                        <h4> Rules: <span class="h5" style="font-size: 1.1rem"> No </span> </h4>
+                        <h4> Rules: <span class="h5" style="font-size: 1.1rem" id="car-rule"> </span> </h4>
+                    </div>
+                    <div class="service-fee">
+                        <h4> Fee: <span class="h5" style="font-size: 1.1rem" id="car-fee"> </span> </h4>
+                    </div>
+                    <div class="service-time">
+                        <h4> Times: <span class="h5" style="font-size: 1.1rem" id="car-time"> </span> </h4>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 col-12">
-                <div class="service-img">
-                    <img src="bg3.jpg" alt="" class="img-fluid">
-                </div>
+                <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <!-- Button change slide (under image) -->
+                      <button type="button" id="carousel-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" id="carousel-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" id="carousel-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" id="carousel-button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+
+                    <!-- Inner slide (image)  -->
+                    <div class="carousel-inner">
+
+                      <!-- Image 1 -->
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <!-- src="IMG\dc73fdcd-eabc-452e-91cc-770ca17ba96b.jpg" -->
+                        <img id="room-img-1" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#myModal" alt="Room image">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+
+                        </div>
+                      </div>
+
+                      <!-- Image 2 -->
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img id="room-img-2" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#myModal" alt="Room image">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+
+                        </div>
+                      </div>
+
+                      <!-- Image 3 -->
+                      <div class="carousel-item">
+                        <img src="IMG\680eed36-67af-42f2-8f29-72cac6dcb18e.jpg" id="room-img-3" data-bs-toggle="modal" data-bs-target="#myModal" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+
+                        </div>
+                      </div>
+
+                      <!-- Image 4 -->
+                      <div class="carousel-item">
+                        <img class="img-fluid" src="Buiding floor plan/B1/B1-Lv1.PNG"  id="room-img-4" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#myModal" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+
+                        </div>
+                      </div>
+                    </div>
+        
+                    <!-- Arrow change slide (left,right) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </div>
         </div>
@@ -134,7 +203,7 @@
 
     
 <!-- File JS -->
-<script type="module" src="JS/MainPageJS.js"></script>
+<script type="module" src="JS/parkingLot.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
