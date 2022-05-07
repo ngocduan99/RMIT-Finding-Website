@@ -36,13 +36,6 @@ try{
         document.getElementById("car-fee").innerHTML = docSnapCar.data().fee;
         document.getElementById("car-time").innerHTML = docSnapCar.data().time;
     } 
-    else {
-        // doc.data() will be undefined in this case
-        // window.location.replace("index.html");
-        document.getElementById("display-mess").innerHTML = "Invalid Input";
-        alert("Room ID input not valid ! Please try again");
-        location.replace("index.html");
-    }
 }
 catch(err) {
     console.log(err);
