@@ -40,7 +40,7 @@ try{
       document.getElementById("Bobby_Brewers-time").innerHTML = docSnapbb.data().timeOpen;
 
         //Boost data
-  const docRefboost = doc(db,"F&B","Bobby_Brewers");
+  const docRefboost = doc(db,"F&B","Boost");
   const docSnapboost = await getDoc(docRefboost);
       document.getElementById("boost-location").innerHTML = docSnapboost.data().location;
       document.getElementById("boost-description").innerHTML = docSnapboost.data().mainDescription;
