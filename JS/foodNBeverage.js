@@ -158,6 +158,16 @@ try{
           
                 document.getElementById("xiao-rules").innerHTML = docSnapxiao.data().rule;
                 document.getElementById("xiao-time").innerHTML = docSnapxiao.data().timeOpen;
+
+            //Corners
+            const docRefcorners = doc(db,"F&B","Corner");
+            const docSnapcorners = await getDoc(docRefcorners);
+                document.getElementById("corners-location").innerHTML = docSnapcorners.data().location;
+                document.getElementById("corners-description").innerHTML = docSnapcorners.data().mainDescription;
+                document.getElementById("corners-price").innerHTML = docSnapcorners.data().price;
+          
+                document.getElementById("corners-rules").innerHTML = docSnapcorners.data().rule;
+                document.getElementById("corners-time").innerHTML = docSnapcorners.data().timeOpen;
 }
 catch(err) {
     console.log(err);
@@ -361,6 +371,19 @@ try{
     )
     }
 
+    //Corners
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "corner" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("corners-"+i).setAttribute("src", url);
+        }
+    )
+    }
 }
 catch(err) {
     console.log(err);
@@ -774,7 +797,38 @@ var modalImg = document.getElementById("modal-img")
 img.onclick = function(){
     modalImg.src = this.src;
 }
+
+//Corners
+// Image 1
+var img = document.getElementById("corners-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
 }
+
+// Image 2
+var img = document.getElementById("corners-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("corners-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("corners-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+}
+
 
 
 
