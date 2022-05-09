@@ -20,6 +20,12 @@
 .service-container{
     padding-top: 10%;
 }
+
+.card{
+    margin-bottom: 50px;
+}
+
+
 /* ===============MEDIA SCREEN================ */
 @media only screen and (min-width: 768px) and (min-width: 991px) {
     .service-container{
@@ -31,4 +37,18 @@
     .service-container{
         padding-top: 20%;
     }
+}
+
+/* About Us Part */
+
+.team .card-body i{
+    font-size: 20px;
+}
+
+.team .card-body h3{
+    font-size: 25px;
+}
+
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
