@@ -101,3 +101,55 @@ try{
 catch(err) {
     console.log(err);
 }
+
+const str = getStorage(app);
+
+try{
+   
+    for(let i=1; i<5; i++){
+        var imgRef_ = "service" +'/' + "it_desk" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("it-"+i).setAttribute("src", url);
+        }
+    )
+    }
+}
+catch(e){
+    console.log(err);
+} 
+
+
+// IT service desk image
+
+// Image 1
+var img = document.getElementById("it-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("it-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("it-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("it-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
