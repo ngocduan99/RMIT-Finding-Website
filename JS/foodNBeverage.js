@@ -365,3 +365,417 @@ try{
 catch(err) {
     console.log(err);
 }
+
+function popup(){
+// Asian
+// Image 1
+var img = document.getElementById("asian-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("asian-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("asian-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("asian-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Bobby Brewers
+// Image 1
+var img = document.getElementById("bobbybrewers-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("bobbybrewers-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("bobbybrewers-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("bobbybrewers-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Boost
+// Image 1
+var img = document.getElementById("boost-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("boost-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("boost-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("boost-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//La Catina
+// Image 1
+var img = document.getElementById("catina-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("catina-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("catina-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("catina-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Circle K
+// Image 1
+var img = document.getElementById("circle-k-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("circle-k-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("circle-k-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("circle-k-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Curry Hut
+// Image 1
+var img = document.getElementById("curry-hut-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("curry-hut-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("curry-hut-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("curry-hut-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Global Cafe
+// Image 1
+var img = document.getElementById("global-cafe-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("global-cafe-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("global-cafe-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("global-cafe-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Highland
+// Image 1
+var img = document.getElementById("highland-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("highland-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("highland-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("highland-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+
+//Lygon
+// Image 1
+var img = document.getElementById("lygon-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("lygon-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("lygon-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("lygon-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Nine
+// Image 1
+var img = document.getElementById("nine-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("nine-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("nine-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("nine-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Noodles
+// Image 1
+var img = document.getElementById("noodles-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("noodles-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("noodles-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("noodles-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Sorento
+// Image 1
+var img = document.getElementById("sorento-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("sorento-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("sorento-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("sorento-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+
+//Vua Banh Mi
+// Image 1
+var img = document.getElementById("vbm-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("vbm-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("vbm-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("vbm-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//XiaoBan
+// Image 1
+var img = document.getElementById("xiao-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("xiao-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("xiao-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("xiao-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+}
+
+
+
+popup();
