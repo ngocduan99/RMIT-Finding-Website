@@ -162,3 +162,206 @@ try{
 catch(err) {
     console.log(err);
 }
+
+
+const str = getStorage(app);
+try{
+    // Asian
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "asian" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("asian-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Bobby Brewers
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "bobbybrewers" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("bobbybrewers-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Boost
+     for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "boost" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("boost-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Catina
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "lacantina" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("catina-"+i).setAttribute("src", url);
+        }
+    )
+    }
+    //Circle K
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "circlek" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("circle-k-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Curry Hut
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "curry" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("curry-hut-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Global Cafe
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "global" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("global-cafe-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Highland
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "highland" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("highland-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Lygon
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "lygon" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("lygon-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Nine
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "nine" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("nine-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Noodles
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "noodle" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("noodles-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Sorento
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "sorento" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("sorento-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Vua Banh Mi
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "vuabanhmi" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("vbm-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Xiao Ban
+    for(let i=1; i<5; i++){
+        var imgRef_ = "f&b" +'/' + "xiaoban" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("xiao-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+}
+catch(err) {
+    console.log(err);
+}
