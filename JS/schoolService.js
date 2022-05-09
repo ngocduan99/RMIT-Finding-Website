@@ -68,14 +68,14 @@ try{
     document.getElementById("LNF-time").innerHTML = docSnapLNF.data().timeOpen;
 
     //SD Data
-    const docRefSD = doc(db,"service","service_desk");
-    const docSnapSD= await getDoc(docRefSD);
-    document.getElementById("SD-location").innerHTML = docSnapSD.data().location;
-    document.getElementById("SD-description").innerHTML = docSnapSD.data().mainDescription;
-    document.getElementById("SD-rule").innerHTML = docSnapSD.data().rule;
-    document.getElementById("SD-permission").innerHTML = docSnapSD.data().permission;
-    document.getElementById("SD-roomID").innerHTML = docSnapSD.data().roomID;
-    document.getElementById("SD-time").innerHTML = docSnapSD.data().timeOpen;
+    const docRefreception = doc(db,"service","reception");
+    const docSnapreception= await getDoc(docRefreception);
+    document.getElementById("reception-location").innerHTML = docSnapreception.data().location;
+    document.getElementById("reception-description").innerHTML = docSnapreception.data().mainDescription;
+    document.getElementById("reception-rule").innerHTML = docSnapreception.data().rule;
+    document.getElementById("reception-permission").innerHTML = docSnapreception.data().permission;
+    document.getElementById("reception-roomID").innerHTML = docSnapreception.data().roomID;
+    document.getElementById("reception-time").innerHTML = docSnapreception.data().timeOpen;
 
     //Sporthall data
     const docRefsport = doc(db,"service","sporthall");
@@ -106,6 +106,7 @@ const str = getStorage(app);
 
 try{
    
+    //IT DESK
     for(let i=1; i<5; i++){
         var imgRef_ = "service" +'/' + "it_desk" +"."+i+'.PNG';
 
@@ -118,14 +119,112 @@ try{
         }
     )
     }
+
+    //sas
+    for(let i=1; i<5; i++){
+        var imgRef_ = "service" +'/' + "sas" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("sas-"+i).setAttribute("src", url);
+        }   
+    )
+    }
+
+    //sos
+    for(let i=1; i<5; i++){
+        var imgRef_ = "service" +'/' + "sos" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("sos-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //CONNECT
+    for(let i=1; i<5; i++){
+        var imgRef_ = "service" +'/' + "connect" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("connect-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //LNF
+    for(let i=1; i<5; i++){
+        var imgRef_ = "service" +'/' + "lost&found" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("lnf-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Reception
+    for(let i=1; i<5; i++){
+        var imgRef_ = "service" +'/' + "reception" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("reception-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Sporthall
+    for(let i=1; i<5; i++){
+        var imgRef_ = "service" +'/' + "sporthall" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("sporthall-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
+    //Wellbeing
+    for(let i=1; i<5; i++){
+        var imgRef_ = "service" +'/' + "wellbeing" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("wellbeing-"+i).setAttribute("src", url);
+        }
+    )
+    }
+
 }
 catch(e){
     console.log(err);
 } 
 
-
+function popup(){
 // IT service desk image
-
 // Image 1
 var img = document.getElementById("it-1")
 var modalImg = document.getElementById("modal-img")
@@ -153,3 +252,214 @@ var modalImg = document.getElementById("modal-img")
 img.onclick = function(){
     modalImg.src = this.src;
 }
+
+
+//SAS IMAGE POPUP
+// Image 1
+var img = document.getElementById("sas-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("sas-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("sas-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("sas-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//SOS IMAGE POPUP
+// Image 1
+var img = document.getElementById("sos-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("sos-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("sos-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("sos-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Connect IMAGE POPUP
+// Image 1
+var img = document.getElementById("connect-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("connect-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("connect-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("connect-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//LNF IMAGE POPUP
+// Image 1
+var img = document.getElementById("lnf-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("lnf-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("lnf-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("lnf-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//reception IMAGE POPUP
+// Image 1
+var img = document.getElementById("reception-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("reception-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("reception-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("reception-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Sprothall IMAGE POPUP
+// Image 1
+var img = document.getElementById("sporthall-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("sporthall-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("sporthall-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("sporthall-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+//Wellbeing IMAGE POPUP
+// Image 1
+var img = document.getElementById("wellbeing-1")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 2
+var img = document.getElementById("wellbeing-2")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 3
+var img = document.getElementById("wellbeing-3")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+// Image 4
+var img = document.getElementById("wellbeing-4")
+var modalImg = document.getElementById("modal-img")
+img.onclick = function(){
+    modalImg.src = this.src;
+}
+
+
+}
+popup();
+
+
+
