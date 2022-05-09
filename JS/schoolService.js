@@ -97,6 +97,15 @@ try{
     document.getElementById("Wellbeing-roomID").innerHTML = docSnapWellbeing.data().roomID;
     document.getElementById("Wellbeing-time").innerHTML = docSnapWellbeing.data().timeOpen;
 
+    //library
+    // const docReflib= doc(db,"service","library");
+    // const docSnaplib= await getDoc(docReflib);
+    // document.getElementById("library-location").innerHTML = docSnaplib.data().location;
+    // document.getElementById("library-description").innerHTML = docSnaplib.data().mainDescription;
+    // document.getElementById("library-rule").innerHTML =docSnaplib.data().rule;
+    // document.getElementById("library-permission").innerHTML = docSnaplib.data().permission;
+    // document.getElementById("library-roomID").innerHTML = docSnaplib.data().roomID;
+    // document.getElementById("library-time").innerHTML = docSnaplib.data().timeOpen;
 }
 catch(err) {
     console.log(err);
@@ -217,6 +226,20 @@ try{
         }
     )
     }
+
+        // //library
+        // for(let i=1; i<5; i++){
+        //     var imgRef_ = "service" +'/' + "library" +"."+i+'.PNG';
+    
+        //     const storageRef_result = ref(str, imgRef_)
+            
+        //     getDownloadURL(storageRef_result).then(
+        //         function(url){
+        //             console.log(url);
+        //             document.getElementById("library-"+i).setAttribute("src", url);
+        //     }
+        // )
+        // }
 
 }
 catch(e){
@@ -457,6 +480,34 @@ img.onclick = function(){
     modalImg.src = this.src;
 }
 
+//library IMAGE POPUP
+// Image 1
+// var img = document.getElementById("library-1")
+// var modalImg = document.getElementById("modal-img")
+// img.onclick = function(){
+//     modalImg.src = this.src;
+// }
+
+// // Image 2
+// var img = document.getElementById("library-2")
+// var modalImg = document.getElementById("modal-img")
+// img.onclick = function(){
+//     modalImg.src = this.src;
+// }
+
+// // Image 3
+// var img = document.getElementById("library-3")
+// var modalImg = document.getElementById("modal-img")
+// img.onclick = function(){
+//     modalImg.src = this.src;
+// }
+
+// // Image 4
+// var img = document.getElementById("library-4")
+// var modalImg = document.getElementById("modal-img")
+// img.onclick = function(){
+//     modalImg.src = this.src;
+// }
 
 }
 popup();
