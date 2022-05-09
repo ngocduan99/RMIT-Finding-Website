@@ -45,7 +45,7 @@ const str = getStorage(app);
 
 try{
    
-    for(let i=1; i<5; i++){
+    for(let i=1; i<7; i++){
         var imgRef_ = "parking" +'/' + "moto" +"."+i+'.PNG';
 
         const storageRef_result = ref(str, imgRef_)
