@@ -40,3 +40,24 @@ try{
 catch(err) {
     console.log(err);
 }
+
+const str = getStorage(app);
+
+try{
+   
+    for(let i=1; i<5; i++){
+        var imgRef_ = "parking" +'/' + "moto" +"."+i+'.PNG';
+
+        const storageRef_result = ref(str, imgRef_)
+        
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("moto-"+i).setAttribute("src", url);
+        }
+    )
+    }
+}
+catch(e){
+    console.log(err);
+} 
