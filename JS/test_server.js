@@ -27,15 +27,17 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase
 import { collection, doc, getDoc, setDoc, getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
 import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-storage.js";
 
-// firebaseConfig
-const firebaseConfig = ({
-    apiKey: "AIzaSyAYuccRNRZU-JUI5HqF-Pr4_q14d_gn5mE",
-    authDomain: "rmit-finding.firebaseapp.com",
-    projectId: "rmit-finding",
-    storageBucket: "rmit-finding.appspot.com",
-    messagingSenderId: "588772101914",
-    appId: "1:588772101914:web:57858d4a30dc76d4fca6a3"
-});
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDNN_YbzJyJcftxkq266WTPSUAb9aMK0y0",
+  authDomain: "rmit-espm.firebaseapp.com",
+  projectId: "rmit-espm",
+  storageBucket: "rmit-espm.appspot.com",
+  messagingSenderId: "1017053490434",
+  appId: "1:1017053490434:web:b48a7eb9ff382f0c3de61b",
+  measurementId: "G-CTQ473HNDZ"
+};
 
 // Initialize Firebase and Firebase-services
 const app = initializeApp(firebaseConfig);
