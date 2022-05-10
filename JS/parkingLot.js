@@ -58,18 +58,18 @@ try{
     )
     }
 
-    // for(let i=1; i<3; i++){
-    //     var imgRef_ = "parking" +'/' + "car" +"."+i+'.PNG';
+    for(let i=1; i<3; i++){
+        var imgRef_ = "parking" +'/' + "car" +"."+i+'.PNG';
 
-    //     const storageRef_result = ref(str, imgRef_)
+        const storageRef_result = ref(str, imgRef_)
         
-    //     getDownloadURL(storageRef_result).then(
-    //         function(url){
-    //             console.log(url);
-    //             document.getElementById("car-"+i).setAttribute("src", url);
-    //     }
-    // )
-    // }
+        getDownloadURL(storageRef_result).then(
+            function(url){
+                console.log(url);
+                document.getElementById("car-"+i).setAttribute("src", url);
+        }
+    )
+    }
 }
 catch(e){
     console.log(err);
