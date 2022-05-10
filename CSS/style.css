@@ -150,4 +150,19 @@
         padding: 100px 0;
     }
 }
+
+
+/* effect-box */
+.search-title {
+    background: linear-gradient(0deg, black, black) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+  }
+
+  .search-title:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+
+
     
