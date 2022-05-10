@@ -83,17 +83,17 @@ var b1Arr = ["B1.01.02", "B1.01.13", "B1.01.14", "B1.01.15", "B1.01.17", "B1.01.
     const resultsWrapper = document.querySelector('.results')
 
     searchInput.addEventListener('keyup', () => {
-        document.getElementById("example-room").style.display="none";
+       
          let results = [];
     let input = searchInput.value;
      if(input.length){
         results = b1Arr.filter((item) => {
             return item.toLowerCase().includes(input.toLowerCase());
         })
-      
+     
     }
     else{
-        document.getElementById("example-room").style.display="";
+
         resultsWrapper.innerHTML="";
     }
     

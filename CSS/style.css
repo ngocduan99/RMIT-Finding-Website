@@ -68,9 +68,9 @@
     font-size: 50px;
 }
 
-.results::-webkit-scrollbar {
+/* .results::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .explore-button{
     font-weight: 600;
@@ -85,9 +85,9 @@
     .card{
         margin-bottom: 30px;
     }
-    .results::-webkit-scrollbar {
+    /* .results::-webkit-scrollbar {
         display: none;
-      }
+      } */
     
 }
 
@@ -96,9 +96,9 @@
     .card{
         margin-bottom: 30px;
     }
-    .results::-webkit-scrollbar {
+    /* .results::-webkit-scrollbar {
         display: none;
-    }
+    } */
 
     .section-padding{
         padding: 100px 0;
